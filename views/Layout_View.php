@@ -26,74 +26,77 @@ class Layout_View
     public function printHTMLPage($section)
     {
         ?>
-	<!DOCTYPE html>
+    <!DOCTYPE html>
     <html class="wide wow-animation" lang="en">
-        
-        <head>
-            <!-- Site Title-->
-            <title>Home</title>
-            <meta name="format-detection" content="telephone=no">
-            <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta charset="utf-8">
-            <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-            <?php 
+
+    <head>
+        <!-- Site Title-->
+        <title>Home</title>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <?php 
             echo self::getCommonStyle();
             ?>
-        </head>
-		<body>
-			<!-- Page-->
-    			<div class="text-left page">
-    				<!-- Page preloader-->
-                <div class="page-loader">
-                    <div>
-                        <div class="page-loader-body">
-                            <div id="ballsWaveG">
-                                <div class="ballsWaveG" id="ballsWaveG_1"> </div>
-                                <div class="ballsWaveG" id="ballsWaveG_2"></div>
-                                <div class="ballsWaveG" id="ballsWaveG_3"></div>
-                                <div class="ballsWaveG" id="ballsWaveG_4"></div>
-                                <div class="ballsWaveG" id="ballsWaveG_5"></div>
-                                <div class="ballsWaveG" id="ballsWaveG_6"></div>
-                                <div class="ballsWaveG" id="ballsWaveG_7"></div>
-                                <div class="ballsWaveG" id="ballsWaveG_8"></div>
-                            </div>
+    </head>
+
+    <body>
+        <!-- Page-->
+        <div class="text-left page">
+            <!-- Page preloader-->
+            <div class="page-loader">
+                <div>
+                    <div class="page-loader-body">
+                        <div id="ballsWaveG">
+                            <div class="ballsWaveG" id="ballsWaveG_1"> </div>
+                            <div class="ballsWaveG" id="ballsWaveG_2"></div>
+                            <div class="ballsWaveG" id="ballsWaveG_3"></div>
+                            <div class="ballsWaveG" id="ballsWaveG_4"></div>
+                            <div class="ballsWaveG" id="ballsWaveG_5"></div>
+                            <div class="ballsWaveG" id="ballsWaveG_6"></div>
+                            <div class="ballsWaveG" id="ballsWaveG_7"></div>
+                            <div class="ballsWaveG" id="ballsWaveG_8"></div>
                         </div>
                     </div>
                 </div>
-				<?php 
+            </div>
+            <?php 
                 echo self::getCommonHeader();
                 ?>
-                <!--========================================================
+            <!--========================================================
                                   CONTENT
                 =========================================================-->
-                	<?php
+            <?php
     			    switch ($section) 
     			    {    
                     case 'index':
     					    echo self :: getSlider();
     					    echo self :: getIndexItems();
-    					    echo self::getIndexProductCategories();
-    					    echo self::getIndexWelcome();
-    					    echo self::getLatestFromBlog();
-    					    echo self::getLatestNews();
+    					    echo self :: getProductOne();
+    					    echo self :: getIndexProductCategories();
+    					    echo self :: getIndexWelcome();
+    					    echo self :: getLatestFromBlog();
+    					    echo self :: getLatestNews();
     				    break;
         				
     				    default:
     				    break;
     			    }
                 ?>
-            		<?php
+                <?php
                     echo self::getFooter(); 
                 ?>
-			</div>
-			<?php
+        </div>
+        <?php
 			echo self::getCommonScripts();
 			echo self::getGoogleAnalytics()
 			?>
-			<!-- <div id="getSize"><p>W: <span></span></p><p>H: <span></span></p></div> -->
-		</body>
-	</html>
+            <!-- <div id="getSize"><p>W: <span></span></p><p>H: <span></span></p></div> -->
+    </body>
+
+    </html>
     <?php
     }
     
@@ -126,11 +129,11 @@ class Layout_View
             </div>
             <script src="js/html5shiv.js"></script>
             <![endif]-->
-        <!-- Javascript-->
-        <script src="js/core.min.js"></script>
-        <script src="js/script.js"></script>
-    
-    		<?php
+            <!-- Javascript-->
+            <script src="js/core.min.js"></script>
+            <script src="js/script.js"></script>
+
+            <?php
     	$scripts = ob_get_contents();
     	ob_end_clean();
     	return $scripts;
@@ -140,7 +143,7 @@ class Layout_View
 	{
 		ob_start();
 		?>
-		<?php 
+                <?php 
 		$google = ob_get_contents();
 		ob_end_clean();
 		return $google;
@@ -429,7 +432,7 @@ class Layout_View
                     </div>
                 </div>
             </div>
-        <?php
+            <?php
         $method = ob_get_contents();
         ob_end_clean();
         return $method;
@@ -519,6 +522,37 @@ class Layout_View
                 </div>
             </div>
         </section>
+		<?php
+        $method = ob_get_contents();
+        ob_end_clean();
+        return $method;
+    }
+    
+    public function getProductOne()
+    {
+        ob_start();
+        ?>
+        <section class="section section-lg bg-white text-left">
+            <div class="shell">
+                <div class="range range-60">
+                    <div class="cell-lg-10">
+                        <div class="range range-60">
+                            <div class="cell-md-5"><img src="images/single-service-1-541x369.jpg" alt="" width="541" height="369">
+                            </div>
+                            <div class="cell-md-5">
+                                <h3 class="section-title">wellness65+</h3>
+                                <p>Wellness65+ offers 20% off the entire store on the first Wednesday of every month. If you are age 65, or know someone who is, enroll for free and plan ahead to purchase your non-prescription items once a month on Wellness65+ Wednesdays. Ready to join for free? Just click on the button at the bottom of the post.</p>
+                                <p class="text-bold text-gray-darker">Readers know that you can score great deals and even free items when you follow the sales and use coupons at Pharmacy. In addition to the 20% discount for seniors, Pharmacy also offers more perks for becoming a member of their Wellness65+ program.</p><a class="button button-primary" href="#"> book this service</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell-lg-2">
+                        <div class="range range-50">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <?php
         $method = ob_get_contents();
         ob_end_clean();
@@ -597,7 +631,6 @@ class Layout_View
     {
         ob_start();
         ?>
-        
         <section class="section section-lg bg-white section-full-width">
             <div class="shell">
                 <div class="range range-30">
@@ -719,7 +752,6 @@ class Layout_View
                 </div>
             </div>
         </section>
-        <!-- Page Footer-->
         <?php
         $method = ob_get_contents();
         ob_end_clean();
@@ -838,7 +870,7 @@ class Layout_View
     {
         ob_start();
         ?>
-        <?php
+		<?php
         $method = ob_get_contents();
         ob_end_clean();
         return $method;
