@@ -1,45 +1,154 @@
-<!DOCTYPE html>
-<html class="wide wow-animation" lang="en">
+<?php
+$root = $_SERVER['DOCUMENT_ROOT'];
+require_once $root.'/Framework/Tools.php';
 
-<head>
-    <!-- Site Title-->
-    <title>Home</title>
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Stylesheets-->
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:400,400i,700">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!--[if lt IE 10]>
-    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <script src="js/html5shiv.min.js"></script>
-		<![endif]-->
-</head>
-
-<body>
-    <!-- Page-->
-    <div class="text-left page">
-        <!-- Page preloader-->
-        <div class="page-loader">
-            <div>
-                <div class="page-loader-body">
-                    <div id="ballsWaveG">
-                        <div class="ballsWaveG" id="ballsWaveG_1"> </div>
-                        <div class="ballsWaveG" id="ballsWaveG_2"></div>
-                        <div class="ballsWaveG" id="ballsWaveG_3"></div>
-                        <div class="ballsWaveG" id="ballsWaveG_4"></div>
-                        <div class="ballsWaveG" id="ballsWaveG_5"></div>
-                        <div class="ballsWaveG" id="ballsWaveG_6"></div>
-                        <div class="ballsWaveG" id="ballsWaveG_7"></div>
-                        <div class="ballsWaveG" id="ballsWaveG_8"></div>
+class Layout_View
+{
+    private $data;
+    
+    public function __construct($data)
+    {
+        $this->data = $data;
+    }
+    
+    /**
+     * function printHTMLPage
+     *
+     * Prints the content of the whole website
+     *
+     * @param head 		(string) Is the head of the HTML structure
+     * @param header 	(string) Is the menu and logo section
+     * @param bodyType	(string) Is for CSS purposes
+     * @param body		(string) Content of the website
+     *
+     */
+    
+    public function printHTMLPage($section)
+    {
+        ?>
+	<!DOCTYPE html>
+    <html class="wide wow-animation" lang="en">
+        
+        <head>
+            <!-- Site Title-->
+            <title>Home</title>
+            <meta name="format-detection" content="telephone=no">
+            <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta charset="utf-8">
+            <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+            <?php 
+            echo self::getCommonStyle();
+            ?>
+        </head>
+		<body>
+			<!-- Page-->
+    			<div class="text-left page">
+    				<!-- Page preloader-->
+                <div class="page-loader">
+                    <div>
+                        <div class="page-loader-body">
+                            <div id="ballsWaveG">
+                                <div class="ballsWaveG" id="ballsWaveG_1"> </div>
+                                <div class="ballsWaveG" id="ballsWaveG_2"></div>
+                                <div class="ballsWaveG" id="ballsWaveG_3"></div>
+                                <div class="ballsWaveG" id="ballsWaveG_4"></div>
+                                <div class="ballsWaveG" id="ballsWaveG_5"></div>
+                                <div class="ballsWaveG" id="ballsWaveG_6"></div>
+                                <div class="ballsWaveG" id="ballsWaveG_7"></div>
+                                <div class="ballsWaveG" id="ballsWaveG_8"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+				<?php 
+                echo self::getCommonHeader();
+                ?>
+                <!--========================================================
+                                  CONTENT
+                =========================================================-->
+                	<?php
+    			    switch ($section) 
+    			    {    
+                    case 'index':
+    					    echo self :: getSlider();
+    					    echo self :: getIndexItems();
+    					    echo self::getIndexProductCategories();
+    					    echo self::getIndexWelcome();
+    					    echo self::getLatestFromBlog();
+    					    echo self::getLatestNews();
+    				    break;
+        				
+    				    default:
+    				    break;
+    			    }
+                ?>
+            		<?php
+                    echo self::getFooter(); 
+                ?>
+			</div>
+			<?php
+			echo self::getCommonScripts();
+			echo self::getGoogleAnalytics()
+			?>
+			<!-- <div id="getSize"><p>W: <span></span></p><p>H: <span></span></p></div> -->
+		</body>
+	</html>
+    <?php
+    }
+    
+    public function getCommonStyle()
+    {
+        ob_start();
+        ?>
+        <!-- Stylesheets-->
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:400,400i,700">
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/fonts.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <?php
+        $style = ob_get_contents();
+        ob_end_clean();
+        return $style;
+    }
+    
+    public function getCommonScripts()
+    {
+        ob_start();
+        ?>
+            <!--[if lt IE 9]>
+            <html class="lt-ie9">
+            <div style=' clear: both; text-align:center; position: relative;'>
+                <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+                    <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+                         alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+                </a>
             </div>
-        </div>
+            <script src="js/html5shiv.js"></script>
+            <![endif]-->
+        <!-- Javascript-->
+        <script src="js/core.min.js"></script>
+        <script src="js/script.js"></script>
+    
+    		<?php
+    	$scripts = ob_get_contents();
+    	ob_end_clean();
+    	return $scripts;
+    }
+    
+    public function getGoogleAnalytics()
+	{
+		ob_start();
+		?>
+		<?php 
+		$google = ob_get_contents();
+		ob_end_clean();
+		return $google;
+	}
+    public function getCommonHeader()
+    {
+        ob_start();
+        ?>
         <!-- Page Header-->
         <header class="page-header">
             <!-- RD Navbar-->
@@ -168,6 +277,16 @@
                 </nav>
             </div>
         </header>
+        <?php
+        $header = ob_get_contents();
+        ob_end_clean();
+        return $header;
+    }
+    
+    public function getSlider()
+    {
+        ob_start();
+        ?>
         <!-- Swiper-->
         <section class="swiper-main-wrap wow fadeIn">
             <div class="swiper-container swiper-slider" data-index-bullet="true" data-clickable="true" data-custom-pagination="#swiper-pagination-index" data-slide-effect="fade" data-autoplay="4000" data-simulate-touch="false">
@@ -227,6 +346,16 @@
             </div>
             <div class="swiper-pagination swiper-pagination-index" id="swiper-pagination-index"></div>
         </section>
+        <?php
+        $slider = ob_get_contents();
+        ob_end_clean();
+        return $slider;
+    }
+    
+    public function getIndexItems()
+    {
+        ob_start();
+        ?>
         <!-- Opening Hours-->
         <section class="section section-lg bg-white section-after-swiper-modern section-full-width">
             <div class="shell">
@@ -300,7 +429,16 @@
                     </div>
                 </div>
             </div>
-        </section>
+        <?php
+        $method = ob_get_contents();
+        ob_end_clean();
+        return $method;
+    }
+    
+    public function getIndexProductCategories()
+    {
+        ob_start();
+        ?>
         <section class="section section-lg bg-white section-full-width">
             <div class="shell">
                 <div class="range range-30">
@@ -381,6 +519,16 @@
                 </div>
             </div>
         </section>
+        <?php
+        $method = ob_get_contents();
+        ob_end_clean();
+        return $method;
+    }
+    
+    public function getIndexWelcome()
+    {
+        ob_start();
+        ?>
         <section class="section section-full-width section-lg bg-gray-lighter">
             <div class="shell">
                 <div class="range range-30 range-lg-justify">
@@ -439,88 +587,17 @@
                 </div>
             </div>
         </section>
-        <section class="section-lg bg-gray-lighter section section-full-width">
-            <div class="shell">
-                <div class="range range-xs-center range-30">
-                    <div class="cell-xs-5 cell-md-2">
-                        <div class="counter-modern">
-                            <div class="counter-wrap">
-                                <div class="heading-1"><span class="counter" data-step="3000">15</span></div>
-                                <p class="small">Years <br>of experience</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cell-xs-5 cell-md-2">
-                        <div class="counter-modern">
-                            <div class="counter-wrap">
-                                <div class="heading-1"><span class="counter-preffix"> </span><span class="counter" data-speed="2500">27</span></div>
-                                <p class="small">Qualified<br>specialists</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cell-xs-5 cell-md-2">
-                        <div class="counter-modern">
-                            <div class="counter-wrap">
-                                <div class="heading-1"><span class="counter" data-step="1500">13</span></div>
-                                <p class="small">Medical<br>awards</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cell-xs-5 cell-md-2">
-                        <div class="counter-modern">
-                            <div class="counter-wrap">
-                                <div class="heading-1"><span class="counter" data-speed="1300">1</span><span class="counter-preffix">.5 k</span></div>
-                                <p class="small">Happy<br>clients</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cell-xs-5 cell-md-2">
-                        <div class="counter-modern">
-                            <div class="counter-wrap">
-                                <div class="heading-1"><span class="counter-preffix"></span><span class="counter" data-speed="1300">36</span></div>
-                                <p class="small">Country <br>locations</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section-lg bg-secondary context-dark text-center">
-            <div class="shell">
-                <div class="range range-40 range-xs-center">
-                    <div class="cell-sm-9 cell-lg-6">
-                        <h3 class="section-title">Customer reviews</h3>
-                    </div>
-                    <div class="cell-sm-9 cell-lg-7">
-                        <!-- Owl Carousel-->
-                        <div class="owl-carousel carousel-arrow-white" data-items="1" data-dots="false" data-nav="true" data-stage-padding="15" data-loop="true" data-autoplay="true" data-margin="30" data-mouse-drag="false">
-                            <div class="block-testimonials-classic">
-                                <div class="testimonials-classic-quote"><span>“</span></div>
-                                <div class="testimonials-classic-text">
-                                    <p>I want to recommend this Pharmacy to everybody. I have fought with my extra weight for years using different waist trimmers and belts but with these caps, I understood that what I need is just to eat less. I almost do not feel hunger and put off weight natural way. I want to get rid of 2 pounds and plan to buy online again soon.</p>
-                                </div>
-                                <div class="testimonials-classic-author">
-                                    <figure><img src="images/user-1-135x135.jpg" alt=""></figure>
-                                    <h4>Sam Johnson</h4>
-                                    <p>Patient</p>
-                                </div>
-                            </div>
-                            <div class="block-testimonials-classic">
-                                <div class="testimonials-classic-quote"><span>“</span></div>
-                                <div class="testimonials-classic-text">
-                                    <p>When I placed an order for my granddad I gave his address and my phone and it took a bit longer to deliver the products because they phoned me and my granddaddy to check everything and I was nervous because of it. I understand that they work like this as it helps to avoid credit card fraud. I will order from them again because they are honest.</p>
-                                </div>
-                                <div class="testimonials-classic-author">
-                                    <figure><img src="images/user-2-135x135.jpg" alt=""></figure>
-                                    <h4>Tom Wilson</h4>
-                                    <p>Director</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        $method = ob_get_contents();
+        ob_end_clean();
+        return $method;
+    }
+    
+    public function getFeaturedProducts()
+    {
+        ob_start();
+        ?>
+        
         <section class="section section-lg bg-white section-full-width">
             <div class="shell">
                 <div class="range range-30">
@@ -593,23 +670,16 @@
                 </div>
             </div>
         </section>
-        <section class="section">
-            <div class="parallax-container parallax-container-modern" data-parallax-img="images/bg-04.jpg">
-                <div class="parallax-content section-lg context-dark">
-                    <div class="shell text-center">
-                        <div class="range range-xs-center">
-                            <div class="cell-md-8 cell-lg-7">
-                                <h3 class="section-title">Get 50% off PRESCRIPTIONS </h3>
-                                <p class="heading-5 text-regular">We can reduce your monthly medication bill by 50% on average. Check our prices and see the savings. We have saved our members over $5 million to date.</p>
-                                <!-- Countdown-->
-                                <div class="countdown" data-type="until" data-time="17 Dec 2018 16:00" data-format="dhms"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Latest News-->
+        <?php
+        $method = ob_get_contents();
+        ob_end_clean();
+        return $method;
+    }
+    
+    public function getLatestFromBlog()
+    {
+        ob_start();
+        ?>
         <section class="section section-lg bg-white wow fadeIn">
             <div class="shell">
                 <div class="range range-40">
@@ -650,7 +720,16 @@
             </div>
         </section>
         <!-- Page Footer-->
-        <!-- Contact us-->
+        <?php
+        $method = ob_get_contents();
+        ob_end_clean();
+        return $method;
+    }
+    
+    public function getLatestNews()
+    {
+        ob_start();
+        ?>
         <section class="section section-md section-full-width bg-secondary context-dark pre-footer">
             <div class="shell">
                 <div class="range range-40">
@@ -713,6 +792,16 @@
                 </div>
             </div>
         </section>
+        <?php
+        $method = ob_get_contents();
+        ob_end_clean();
+        return $method;
+    }
+    
+    public function getFooter()
+    {
+        ob_start();
+        ?>
         <footer class="page-footer-full section section-full-width">
             <div class="shell">
                 <div class="range range-15">
@@ -739,48 +828,19 @@
                 </div>
             </div>
         </footer>
-    </div>
-    <!-- Global Mailform Output-->
-    <div class="snackbars" id="form-output-global"> </div>
-    <!-- Javascript-->
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
-
-    <!--LIVEDEMO_00 -->
-
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-7078796-5']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
-
-</body>
-<!-- Google Tag Manager --><noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-P9FT69"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-P9FT69');
-
-</script>
-<!-- End Google Tag Manager -->
-
-</html>
+        <?php
+        $footer = ob_get_contents();
+        ob_end_clean();
+        return $footer;
+    }
+    
+    public function myMethod()
+    {
+        ob_start();
+        ?>
+        <?php
+        $method = ob_get_contents();
+        ob_end_clean();
+        return $method;
+    }
+}
