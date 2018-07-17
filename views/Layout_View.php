@@ -72,12 +72,12 @@ class Layout_View
     			    switch ($section) 
     			    {    
                     case 'index':
-    					    echo self :: getSlider();
-    					    echo self :: getIndexItems();
+    					    //echo self :: getSlider();
+    					    //echo self :: getIndexItems();
     					    echo self :: getProductOne();
-    					    echo self :: getIndexProductCategories();
-    					    echo self :: getIndexWelcome();
-    					    echo self :: getLatestFromBlog();
+    					    //echo self :: getIndexProductCategories();
+    					    //echo self :: getIndexWelcome();
+    					    //echo self :: getLatestFromBlog();
     					    echo self :: getLatestNews();
     				    break;
         				
