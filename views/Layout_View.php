@@ -157,56 +157,38 @@ class Layout_View
             <!-- RD Navbar-->
             <div class="rd-navbar-wrap">
                 <nav class="rd-navbar rd-navbar-default" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-md-stick-up-offset="49px" data-lg-stick-up-offset="46px" data-stick-up="true" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true">
-                    <div class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
-                    <div class="rd-navbar-top-panel">
-                        <div class="rd-navbar-top-panel-inner">
-                            <div class="rd-navbar-collapse">
-                                <ul class="list-spreader">
-                                    <li><span class="icon mdi mdi-map-marker"></span><a href="index.html#">London, UK 10, Firs Avenue, Muswell Hill</a></li>
-                                    <li> <span class="icon mdi mdi-clock"></span>Weekdays: 8:00–20:00 Weekend: Closed</li>
-                                </ul>
-                                <div class="rd-navbar-call">
-                                    <div class="unit-link-with-icon unit unit-spacing-xs unit-horizontal">
-                                        <div class="unit-left"><span class="icon icon-md-big icon-primary mdi-phone"></span></div>
-                                        <div class="unit-body"><a href="tel:#">1-800-700-6200</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="block-right">
-                                <ul class="list-inline">
-                                    <li><a href="log-in.html">Log In</a></li>
-                                    <li><a href="register.html">Create an account</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span>
                     </div>
+                    
                     <div class="rd-navbar-inner">
                         <!-- RD Navbar Panel-->
                         <div class="rd-navbar-panel">
                             <!-- RD Navbar Toggle-->
                             <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                            <!-- RD Navbar Brand-->
                             <div class="rd-navbar-brand">
-                                <a class="brand-name" href="index.html"><img src="images/brand-default-182x53.png" alt="" width="182" height="53" /></a>
+                                <a class="brand-name" href="index.html"><img src="images/galorganic.png" alt="" width="182" height="53" /></a>
                             </div>
+                            <!-- RD Navbar Brand-->
+                            
                         </div>
                         <div class="rd-navbar-aside-right">
+                            
                             <div class="rd-navbar-nav-wrap rd-navbar-nav-wrap-default">
                                 <!-- RD Navbar Nav-->
                                 <ul class="rd-navbar-nav">
-                                    <li class="active"><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About us</a>
+                                    <li class="active"><a href="index.html"> Información productos</a></li>
+                                    <li><a href="services.html"> Tienda en línea</a>
                                         <ul class="rd-navbar-dropdown">
                                             <li><a href="faq.html">FAQ</a></li>
                                             <li><a href="careers.html">Careers </a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="services.html">Services</a>
+                                    <li><a href="about.html"> Acerca de Galorganic</a>
                                         <ul class="rd-navbar-dropdown">
                                             <li><a href="single-service.html">Single Service</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="index.html#">Shop</a>
+                                    <li><a href="contacts.html">Contacto</a>
                                         <ul class="rd-navbar-dropdown">
                                             <li><a href="categories.html">Categories</a></li>
                                             <li><a href="products.html">Products</a></li>
@@ -214,7 +196,7 @@ class Layout_View
                                             <li><a href="shopping-cart.html">Cart Page</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="news.html">News</a>
+                                    <!--<li><a href="news.html">News</a>
                                         <ul class="rd-navbar-dropdown">
                                             <li><a href="news-page.html">News Page</a></li>
                                         </ul>
@@ -222,7 +204,7 @@ class Layout_View
                                     <li><a href="contacts.html">Contacts</a></li>
                                     <li><a href="index.html#">Pages</a>
                                         <!-- RD Navbar Megamenu-->
-                                        <ul class="rd-navbar-megamenu">
+                                        <!--<ul class="rd-navbar-megamenu">
                                             <li class="rd-navbar-megamenu-item">
                                                 <div class="rd-navbar-megamenu-item-inner">
                                                     <h6 class="rd-navbar-megamenu-title">Pages 1</h6>
@@ -267,18 +249,24 @@ class Layout_View
                                             </li>
                                         </ul>
                                     </li>
-                                </ul>
-                                <div class="rd-navbar-call">
-                                    <div class="unit-link-with-icon unit unit-spacing-xs unit-horizontal">
+                                </ul>--->
+                                <!--<div class="rd-navbar-call">
+                                    <!--<div class="unit-link-with-icon unit unit-spacing-xs unit-horizontal">
                                         <div class="unit-left"><span class="icon icon-md-big icon-secondary mdi-phone"></span></div>
                                         <div class="unit-body"><a href="tel:#">1-800-700-6200</a></div>
                                     </div>
+                                </div>-->
+                                    
+                           
+                                </ul>
+                                </nav>
+                                        
+                                </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </nav>
-            </div>
+                         
+                                
         </header>
         <?php
         $header = ob_get_contents();
@@ -766,25 +754,6 @@ class Layout_View
             <div class="shell">
                 <div class="range range-40">
                     <div class="cell-lg-3 cell-sm-5">
-                        <div style="max-width: 283px">
-                            <h5 class="section-title">Latest news</h5>
-                            <ul class="list list-lg">
-                                <li>
-                                    <article class="news-mini">
-                                        <p class="text-bold">2 hours ago</p>
-                                        <p class="news-mini-title"><a href="news-page.html">Integrative Medicine & Cancer Treatment Worldwide</a></p>
-                                    </article>
-                                </li>
-                                <li>
-                                    <article class="news-mini">
-                                        <p class="text-bold">2 hours ago</p>
-                                        <p class="news-mini-title"><a href="news-page.html">The Basics of Providing Better Health Care For Families</a></p>
-                                    </article>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="cell-lg-3 cell-sm-5">
                         <div style="max-width: 294px">
                             <h5 class="section-title">Contact Information</h5>
                             <ul class="list list-lg">
@@ -793,7 +762,7 @@ class Layout_View
                                         <div class="unit-left">
                                             <p class="large">Phone:</p>
                                         </div>
-                                        <div class="unit-body"><a class="link-footer large text-spacing-75 font-sec" href="tel:#">1-800-700-6200</a></div>
+                                        <div class="unit-body"><a class="link-footer large text-spacing-75 font-sec" href="tel:#"></a>(33) 2308 5711</div>
                                     </div>
                                 </li>
                                 <li>
@@ -801,7 +770,7 @@ class Layout_View
                                         <div class="unit-left">
                                             <p class="large">E-mail:</p>
                                         </div>
-                                        <div class="unit-body" style="position: relative; top: -1px"><a class="link-footer large" href="mailto:#">info@demolink.org</a></div>
+                                        <div class="unit-body" style="position: relative; top: -1px"><a class="link-footer large" href="mailto:#">sagalorganic@gmail.com</a></div>
                                     </div>
                                 </li>
                                 <li>
@@ -809,16 +778,39 @@ class Layout_View
                                         <div class="unit-left">
                                             <p class="large">Address: </p>
                                         </div>
-                                        <div class="unit-body"><a class="link-footer" href="index.html#">London, UK 10, Firs Avenue, Muswell Hill</a></div>
+                                        <div class="unit-body"><a class="link-footer" href="index.html#">Allende 95 Local A
+                                            Col. Centro
+                                            Sahuayo, Mich.
+                                            C.P. 59000</a></div>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    <div class="cell-lg-3 cell-sm-5">
+                        <div style="max-width: 283px">
+                            <h5 class="section-title">CONTACTO</h5>
+                            <ul class="list list-lg">
+                                <li><article class="news-mini">
+                                        <p class="text-bold">Envío a domicilio gratis.</p>
+                                        <p class="news-mini-title"><a href="news-page.html">¿Dudas?</a><br>Whatsapp 33 1020 1737</p>
+                                    </article>
+                                    <article class="news-mini">
+                                        <p class="text-bold"></p>
+                                        <p class="news-mini-title"><a href="news-page.html"></a><br></p>
+                                    </article>
+                                </li>
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
                     <div class="cell-lg-4">
                         <div>
-                            <h5 class="section-title">Looking for a quality medication?</h5>
-                            <p class="text-secondary-light">Our Pharmacy takes a headache out of shopping for all of your discount pharmacy needs with online pharmacy shopping, massive discounts on over 12,000+ products and a retail shop presence offering everything from health, skin care, weight loss and everyone's favorite big-name shopping brands. </p><a class="button button-primary" href="products.html">Visit our store</a>
+                            <h5 class="section-title">GALORGANIC</h5>
+                            <p class="text-secondary-light">"SA-Galorganic es una empresa 100% mexicana enfocada en la distribución de productos de salud y belleza, comprometidos en brindar alta calidad y siempre cuidando el bienestar de nuestros clientes ofreciendo seguridad y confiabilidad." </p><a class="button button-primary" href="products.html">Visit our store</a>
                         </div>
                     </div>
                 </div>
@@ -838,7 +830,7 @@ class Layout_View
             <div class="shell">
                 <div class="range range-15">
                     <div class="cell-sm-5">
-                        <p class="copyright">Phamacy &#169; <span class="copyright-year"></span>. <a href="privacy-policy.html">Privacy Policy</a>
+                        <p class="copyright">Galorganic &#169; <span class="copyright-year"></span>. <a href="privacy-policy.html">Privacy Policy</a>
                         </p>
                     </div>
                     <div class="cell-sm-5 text-sm-right">
