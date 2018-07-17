@@ -525,7 +525,7 @@ class Layout_View
                 <div class="range range-60">
                     <div class="cell-lg-10">
                         <div class="range range-60">
-                            <div class="cell-md-5"><img src="images/single-service-1-541x369.jpg" alt="" width="541" height="369">
+                            <div class="cell-md-5"><img src="images/piel-de-naranja-2-2_orig.jpg" alt="" width="541" height="369">
                             </div>
                             <div class="cell-md-5">
                                 <h3 class="section-title">wellness65+</h3>
