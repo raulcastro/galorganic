@@ -80,6 +80,30 @@ class Layout_View
     					    //echo self :: getLatestFromBlog();
     					    echo self :: getLatestNews();
     				    break;
+    				    
+                    case 'products':
+                        echo self::getAllProducts();
+                    break;
+                    
+                    case 'colageno':
+                        echo self::getColageno();
+                    break;
+                    
+                    case 'contour':
+                        echo self::getContour();
+                    break;
+                    
+                    case 'dabalash':
+                        echo self::getDabalash();
+                    break;
+                    
+                    case 'about-us':
+                        echo self::getAboutUs();
+                    break;
+                    
+                    case 'contact':
+                        echo self::getContact();
+                    break;
         				
     				    default:
     				    break;
@@ -130,8 +154,8 @@ class Layout_View
             <script src="js/html5shiv.js"></script>
             <![endif]-->
             <!-- Javascript-->
-            <script src="js/core.min.js"></script>
-            <script src="js/script.js"></script>
+            <script src="/js/core.min.js"></script>
+            <script src="/js/script.js"></script>
 
             <?php
     	$scripts = ob_get_contents();
@@ -166,7 +190,7 @@ class Layout_View
                             <!-- RD Navbar Toggle-->
                             <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                             <div class="rd-navbar-brand">
-                                <a class="brand-name" href="index.html"><img src="images/galorganic.png" alt="" width="182" height="53" /></a>
+                                <a class="brand-name" href="index.html"><img src="/images/galorganic.png" alt="" width="182" height="53" /></a>
                             </div>
                             <!-- RD Navbar Brand-->
                             
@@ -176,19 +200,19 @@ class Layout_View
                             <div class="rd-navbar-nav-wrap rd-navbar-nav-wrap-default">
                                 <!-- RD Navbar Nav-->
                                 <ul class="rd-navbar-nav">
-                                    <li class="active"><a href="index.html"> Información productos</a></li>
-                                    <li><a href="services.html"> Tienda en línea</a>
+                                    <li class="active"><a href="/"> Información productos</a></li>
+                                    <li><a href="/galorganic-tienda-en-linea/"> Tienda en línea</a>
                                         <ul class="rd-navbar-dropdown">
                                             <li><a href="faq.html">FAQ</a></li>
                                             <li><a href="careers.html">Careers </a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="about.html"> Acerca de Galorganic</a>
+                                    <li><a href="/galorganic-acerca-de/"> Acerca de Galorganic</a>
                                         <ul class="rd-navbar-dropdown">
                                             <li><a href="single-service.html">Single Service</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contacts.html">Contacto</a>
+                                    <li><a href="/galorganic-contacto/">Contacto</a>
                                         <ul class="rd-navbar-dropdown">
                                             <li><a href="categories.html">Categories</a></li>
                                             <li><a href="products.html">Products</a></li>
@@ -525,7 +549,7 @@ class Layout_View
                 <div class="range range-60">
                     <div class="cell-lg-10">
                         <div class="range range-60">
-                            <div class="cell-md-5"><img src="images/single-service-1-541x369.jpg" alt="" width="541" height="369">
+                            <div class="cell-md-5"><img src="/images/single-service-1-541x369.jpg" alt="" width="541" height="369">
                             </div>
                             <div class="cell-md-5">
                                 <h3 class="section-title">wellness65+</h3>
@@ -817,6 +841,604 @@ class Layout_View
             </div>
         </section>
         <?php
+        $method = ob_get_contents();
+        ob_end_clean();
+        return $method;
+    }
+    
+    public function getAllProducts()
+    {
+        ob_start();
+        ?>
+        <!-- Departments-->
+        <section class="section section-lg bg-white">
+            <div class="shell">
+                <div class="range range-60">
+                    <div class="cell-md-10">
+                        <h4 class="text-center text-sm-left">Featured Products</h4>
+                        <div class="range range-40 range-lg-60">
+                            <div class="cell-xs-5 cell-sm-33 cell-md-33">
+                                <div class="product-item">
+                                    <figure>
+                                        <a href="single-product.html"><img src="/images/product-item-1-270x289.jpg" alt="" width="270" height="289" /></a>
+                                    </figure>
+                                    <div class="product-item-caption">
+                                        <p><a href="single-product.html">Alavert Orally Disintegrating Tablets, 60 tab</a></p>
+                                        <h5 class="product-price">$24.98</h5><a class="button button-primary" href="/comprar-colageno/">add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell-xs-5 cell-sm-33 cell-md-33">
+                                <div class="product-item">
+                                    <figure>
+                                        <a href="single-product.html"><img src="/images/product-item-2-270x289.jpg" alt="" width="270" height="289" /></a>
+                                    </figure>
+                                    <div class="product-item-caption">
+                                        <p><a href="single-product.html">Centrum Flavor Burst Chews, Mixed Fruit, 60 ea</a></p>
+                                        <h5 class="product-price">$8.99</h5><a class="button button-primary" href="/comprar-contour/">add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell-xs-5 cell-sm-33 cell-md-33">
+                                <div class="product-item">
+                                    <figure>
+                                        <a href="single-product.html"><img src="/images/product-item-3-270x289.jpg" alt="" width="270" height="289" /></a>
+                                    </figure>
+                                    <div class="product-item-caption">
+                                        <p><a href="single-product.html">Depend for Women All in One Kit with Briefs and Underwear</a></p>
+                                        <h5 class="product-price">$4.99</h5><a class="button button-primary" href="/comprar-dabalash/">add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<?php
+        $method = ob_get_contents();
+        ob_end_clean();
+        return $method;
+    }
+    
+    public function getColageno()
+    {
+        ob_start();
+        ?>
+        <section class="section-lg bg-white section">
+            <div class="shell">
+                <div class="range range-40">
+                    <div class="cell-md-5 cell-lg-3">
+                        <div class="product-slider">
+                            <!-- Slick Carousel-->
+                            <div class="slick-slider carousel-parent" data-arrows="false" data-loop="false" data-dots="false" data-swipe="true" data-items="1" data-child="#child-carousel" data-for="#child-carousel">
+                                <div class="item"><img src="/images/product-item-1-365x464.jpg" alt="" width="365" height="464" />
+                                </div>
+                                <div class="item"><img src="/images/product-item-2-365x464.jpg" alt="" width="365" height="464" />
+                                </div>
+                                <div class="item"><img src="/images/product-item-3-365x464.jpg" alt="" width="365" height="464" />
+                                </div>
+                                <div class="item"><img src="/images/product-item-1-365x464.jpg" alt="" width="365" height="464" />
+                                </div>
+                            </div>
+                            <div class="slick-slider" id="child-carousel" data-for=".carousel-parent" data-arrows="true" data-loop="false" data-dots="false" data-swipe="true" data-items="4" data-xs-items="4" data-sm-items="4" data-md-items="4" data-lg-items="4" data-slide-to-scroll="1">
+                                <div class="item"><img src="/images/product-item-1-90x106.jpg" alt="" width="90" height="106" />
+                                </div>
+                                <div class="item"><img src="/images/product-item-2-90x106.jpg" alt="" width="90" height="106" />
+                                </div>
+                                <div class="item"><img src="/images/product-item-3-90x106.jpg" alt="" width="90" height="106" />
+                                </div>
+                                <div class="item"><img src="/images/product-item-1-90x106.jpg" alt="" width="90" height="106" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell-md-5 cell-lg-5">
+                        <h3 class="section-title">Allegra Childrens 12 Hour Allergy Liquid, 4 oz</h3>
+                        <p class="large">We’ve got something for the little ones, too. Give your kids effective, non-drowsy, long-lasting relief in a raspberry-flavored liquid that goes down smooth.</p>
+                        <ul class="list-index">
+                            <li><span class="list-index-counter"></span>Fast acting</li>
+                            <li><span class="list-index-counter"></span>Non sedating</li>
+                            <li><span class="list-index-counter"></span>Indoor and outdoor allergy relief</li>
+                            <li><span class="list-index-counter"></span>Long lasting</li>
+                        </ul>
+                        <p class="large">Manufactured by Allegra®</p>
+                        <div class="range range-30">
+                            <div class="cell-xs-10">
+                                <ul class="list-inline list-inline-xs">
+                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
+                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
+                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
+                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
+                                    <li><span class="icon fa-star icon-xs icon-gray"></span></li>
+                                    <li class="text-bold text-gray-darker list-inline-item-offset-sm">2 customer reviews</li>
+                                </ul>
+                            </div>
+                            <div class="cell-xs-10">
+                                <ul class="list-inline">
+                                    <li>
+                                        <input class="form-input" type="number" data-zeros="true" value="5" min="1" max="20">
+                                    </li>
+                                    <li class="text-bold text-gray-darker">Quantity</li>
+                                </ul>
+                            </div>
+                            <div class="cell-xs-10">
+                                <ul class="list-inline heading-4 text-bold">
+                                    <li class="text-strike text-gray-light">$48.00</li>
+                                    <li>$42.00</li>
+                                </ul>
+                            </div>
+                            <div class="cell-xs-10">
+                                <ul class="list-inline">
+                                    <li class="text-bold text-gray-darker">Share this</li>
+                                    <li>
+                                        <a class="icon icon-primary fa-facebook" href="single-product.html#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon icon-primary fa-twitter" href="single-product.html#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon icon-primary fa-google-plus" href="single-product.html#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon icon-primary fa-instagram" href="single-product.html#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon icon-primary fa-pinterest-p" href="single-product.html#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon icon-primary fa-rss" href="single-product.html#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon icon-primary fa-envelope" href="single-product.html#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cell-xs-10"><a class="button button-primary" href="shopping-cart.html">add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-lg bg-white">
+            <div class="shell">
+                <div class="row">
+                    <!-- Isotope Content-->
+                    <div class="col-lg-12">
+                        <div class="isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group">
+                            <div class="row row-condensed">
+                                <div class="col-xs-12 col-sm-6 col-md-3 isotope-item" data-filter="*">
+                                    <a class="media-item" data-lightgallery="item" href="/images/media-1-368x324_original.jpg"><img src="/images/media-1-368x324.jpg" alt="" width="368" height="324" /></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 isotope-item" data-filter="Category 3">
+                                    <a class="media-item" data-lightgallery="item" href="/images/media-2-368x324_original.jpg"><img src="/images/media-2-368x324.jpg" alt="" width="368" height="324" /></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 isotope-item" data-filter="Category 4">
+                                    <a class="media-item" data-lightgallery="item" href="/images/media-3-368x324_original.jpg"><img src="/images/media-3-368x324.jpg" alt="" width="368" height="324" /></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 isotope-item" data-filter="Category 3">
+                                    <a class="media-item" data-lightgallery="item" href="/images/media-4-368x324_original.jpg"><img src="/images/media-4-368x324.jpg" alt="" width="368" height="324" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<?php
+        $method = ob_get_contents();
+        ob_end_clean();
+        return $method;
+    }
+    
+    public function getContour()
+    {
+        ob_start();
+        ?>
+        <section class="section-lg bg-white section">
+            <div class="shell">
+                <div class="range range-40">
+                    <div class="cell-md-5 cell-lg-3">
+                        <div class="product-slider">
+                            <!-- Slick Carousel-->
+                            <div class="slick-slider carousel-parent" data-arrows="false" data-loop="false" data-dots="false" data-swipe="true" data-items="1" data-child="#child-carousel" data-for="#child-carousel">
+                                <div class="item"><img src="/images/product-item-1-365x464.jpg" alt="" width="365" height="464" />
+                                </div>
+                                <div class="item"><img src="/images/product-item-2-365x464.jpg" alt="" width="365" height="464" />
+                                </div>
+                                <div class="item"><img src="/images/product-item-3-365x464.jpg" alt="" width="365" height="464" />
+                                </div>
+                                <div class="item"><img src="/images/product-item-1-365x464.jpg" alt="" width="365" height="464" />
+                                </div>
+                            </div>
+                            <div class="slick-slider" id="child-carousel" data-for=".carousel-parent" data-arrows="true" data-loop="false" data-dots="false" data-swipe="true" data-items="4" data-xs-items="4" data-sm-items="4" data-md-items="4" data-lg-items="4" data-slide-to-scroll="1">
+                                <div class="item"><img src="/images/product-item-1-90x106.jpg" alt="" width="90" height="106" />
+                                </div>
+                                <div class="item"><img src="/images/product-item-2-90x106.jpg" alt="" width="90" height="106" />
+                                </div>
+                                <div class="item"><img src="/images/product-item-3-90x106.jpg" alt="" width="90" height="106" />
+                                </div>
+                                <div class="item"><img src="/images/product-item-1-90x106.jpg" alt="" width="90" height="106" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell-md-5 cell-lg-5">
+                        <h3 class="section-title">Allegra Childrens 12 Hour Allergy Liquid, 4 oz</h3>
+                        <p class="large">We’ve got something for the little ones, too. Give your kids effective, non-drowsy, long-lasting relief in a raspberry-flavored liquid that goes down smooth.</p>
+                        <ul class="list-index">
+                            <li><span class="list-index-counter"></span>Fast acting</li>
+                            <li><span class="list-index-counter"></span>Non sedating</li>
+                            <li><span class="list-index-counter"></span>Indoor and outdoor allergy relief</li>
+                            <li><span class="list-index-counter"></span>Long lasting</li>
+                        </ul>
+                        <p class="large">Manufactured by Allegra®</p>
+                        <div class="range range-30">
+                            <div class="cell-xs-10">
+                                <ul class="list-inline list-inline-xs">
+                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
+                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
+                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
+                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
+                                    <li><span class="icon fa-star icon-xs icon-gray"></span></li>
+                                    <li class="text-bold text-gray-darker list-inline-item-offset-sm">2 customer reviews</li>
+                                </ul>
+                            </div>
+                            <div class="cell-xs-10">
+                                <ul class="list-inline">
+                                    <li>
+                                        <input class="form-input" type="number" data-zeros="true" value="5" min="1" max="20">
+                                    </li>
+                                    <li class="text-bold text-gray-darker">Quantity</li>
+                                </ul>
+                            </div>
+                            <div class="cell-xs-10">
+                                <ul class="list-inline heading-4 text-bold">
+                                    <li class="text-strike text-gray-light">$48.00</li>
+                                    <li>$42.00</li>
+                                </ul>
+                            </div>
+                            <div class="cell-xs-10">
+                                <ul class="list-inline">
+                                    <li class="text-bold text-gray-darker">Share this</li>
+                                    <li>
+                                        <a class="icon icon-primary fa-facebook" href="single-product.html#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon icon-primary fa-twitter" href="single-product.html#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon icon-primary fa-google-plus" href="single-product.html#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon icon-primary fa-instagram" href="single-product.html#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon icon-primary fa-pinterest-p" href="single-product.html#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon icon-primary fa-rss" href="single-product.html#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon icon-primary fa-envelope" href="single-product.html#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cell-xs-10"><a class="button button-primary" href="shopping-cart.html">add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-lg bg-white">
+            <div class="shell">
+                <div class="row">
+                    <!-- Isotope Content-->
+                    <div class="col-lg-12">
+                        <div class="isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group">
+                            <div class="row row-condensed">
+                                <div class="col-xs-12 col-sm-6 col-md-3 isotope-item" data-filter="*">
+                                    <a class="media-item" data-lightgallery="item" href="/images/media-1-368x324_original.jpg"><img src="/images/media-1-368x324.jpg" alt="" width="368" height="324" /></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 isotope-item" data-filter="Category 3">
+                                    <a class="media-item" data-lightgallery="item" href="/images/media-2-368x324_original.jpg"><img src="/images/media-2-368x324.jpg" alt="" width="368" height="324" /></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 isotope-item" data-filter="Category 4">
+                                    <a class="media-item" data-lightgallery="item" href="/images/media-3-368x324_original.jpg"><img src="/images/media-3-368x324.jpg" alt="" width="368" height="324" /></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 isotope-item" data-filter="Category 3">
+                                    <a class="media-item" data-lightgallery="item" href="/images/media-4-368x324_original.jpg"><img src="/images/media-4-368x324.jpg" alt="" width="368" height="324" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<?php
+        $method = ob_get_contents();
+        ob_end_clean();
+        return $method;
+    }
+    
+    public function getDabalash()
+    {
+        ob_start();
+        ?>
+        <section class="section-lg bg-white section">
+            <div class="shell">
+                <div class="range range-40">
+                    <div class="cell-md-5 cell-lg-3">
+                        <div class="product-slider">
+                            <!-- Slick Carousel-->
+                            <div class="slick-slider carousel-parent" data-arrows="false" data-loop="false" data-dots="false" data-swipe="true" data-items="1" data-child="#child-carousel" data-for="#child-carousel">
+                                <div class="item"><img src="/images/product-item-1-365x464.jpg" alt="" width="365" height="464" />
+                                </div>
+                                <div class="item"><img src="/images/product-item-2-365x464.jpg" alt="" width="365" height="464" />
+                                </div>
+                                <div class="item"><img src="/images/product-item-3-365x464.jpg" alt="" width="365" height="464" />
+                                </div>
+                                <div class="item"><img src="/images/product-item-1-365x464.jpg" alt="" width="365" height="464" />
+                                </div>
+                            </div>
+                            <div class="slick-slider" id="child-carousel" data-for=".carousel-parent" data-arrows="true" data-loop="false" data-dots="false" data-swipe="true" data-items="4" data-xs-items="4" data-sm-items="4" data-md-items="4" data-lg-items="4" data-slide-to-scroll="1">
+                                <div class="item"><img src="/images/product-item-1-90x106.jpg" alt="" width="90" height="106" />
+                                </div>
+                                <div class="item"><img src="/images/product-item-2-90x106.jpg" alt="" width="90" height="106" />
+                                </div>
+                                <div class="item"><img src="/images/product-item-3-90x106.jpg" alt="" width="90" height="106" />
+                                </div>
+                                <div class="item"><img src="/images/product-item-1-90x106.jpg" alt="" width="90" height="106" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell-md-5 cell-lg-5">
+                        <h3 class="section-title">Allegra Childrens 12 Hour Allergy Liquid, 4 oz</h3>
+                        <p class="large">We’ve got something for the little ones, too. Give your kids effective, non-drowsy, long-lasting relief in a raspberry-flavored liquid that goes down smooth.</p>
+                        <ul class="list-index">
+                            <li><span class="list-index-counter"></span>Fast acting</li>
+                            <li><span class="list-index-counter"></span>Non sedating</li>
+                            <li><span class="list-index-counter"></span>Indoor and outdoor allergy relief</li>
+                            <li><span class="list-index-counter"></span>Long lasting</li>
+                        </ul>
+                        <p class="large">Manufactured by Allegra®</p>
+                        <div class="range range-30">
+                            <div class="cell-xs-10">
+                                <ul class="list-inline list-inline-xs">
+                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
+                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
+                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
+                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
+                                    <li><span class="icon fa-star icon-xs icon-gray"></span></li>
+                                    <li class="text-bold text-gray-darker list-inline-item-offset-sm">2 customer reviews</li>
+                                </ul>
+                            </div>
+                            <div class="cell-xs-10">
+                                <ul class="list-inline">
+                                    <li>
+                                        <input class="form-input" type="number" data-zeros="true" value="5" min="1" max="20">
+                                    </li>
+                                    <li class="text-bold text-gray-darker">Quantity</li>
+                                </ul>
+                            </div>
+                            <div class="cell-xs-10">
+                                <ul class="list-inline heading-4 text-bold">
+                                    <li class="text-strike text-gray-light">$48.00</li>
+                                    <li>$42.00</li>
+                                </ul>
+                            </div>
+                            <div class="cell-xs-10">
+                                <ul class="list-inline">
+                                    <li class="text-bold text-gray-darker">Share this</li>
+                                    <li>
+                                        <a class="icon icon-primary fa-facebook" href="single-product.html#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon icon-primary fa-twitter" href="single-product.html#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon icon-primary fa-google-plus" href="single-product.html#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon icon-primary fa-instagram" href="single-product.html#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon icon-primary fa-pinterest-p" href="single-product.html#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon icon-primary fa-rss" href="single-product.html#"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon icon-primary fa-envelope" href="single-product.html#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cell-xs-10"><a class="button button-primary" href="shopping-cart.html">add to cart</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-lg bg-white">
+            <div class="shell">
+                <div class="row">
+                    <!-- Isotope Content-->
+                    <div class="col-lg-12">
+                        <div class="isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group">
+                            <div class="row row-condensed">
+                                <div class="col-xs-12 col-sm-6 col-md-3 isotope-item" data-filter="*">
+                                    <a class="media-item" data-lightgallery="item" href="/images/media-1-368x324_original.jpg"><img src="/images/media-1-368x324.jpg" alt="" width="368" height="324" /></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 isotope-item" data-filter="Category 3">
+                                    <a class="media-item" data-lightgallery="item" href="/images/media-2-368x324_original.jpg"><img src="/images/media-2-368x324.jpg" alt="" width="368" height="324" /></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 isotope-item" data-filter="Category 4">
+                                    <a class="media-item" data-lightgallery="item" href="/images/media-3-368x324_original.jpg"><img src="/images/media-3-368x324.jpg" alt="" width="368" height="324" /></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 isotope-item" data-filter="Category 3">
+                                    <a class="media-item" data-lightgallery="item" href="/images/media-4-368x324_original.jpg"><img src="/images/media-4-368x324.jpg" alt="" width="368" height="324" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<?php
+        $method = ob_get_contents();
+        ob_end_clean();
+        return $method;
+    }
+    
+    public function getAboutUs()
+    {
+        ob_start();
+        ?>
+        <!-- Why choose us-->
+        <section class="section section-lg bg-white">
+            <div class="shell">
+                <div class="range range-30">
+                    <div class="cell-md-6"><img src="/images/about-01-803x458.jpg" alt="" width="803" height="458" />
+                    </div>
+                    <div class="cell-md-4">
+                        <h3 class="section-title">about pharmacy</h3>
+                        <p>We pride ourselves on bringing convenient healthcare and medicines, offering instant access to our online pharmacy services, professional doctors, and pharmacy staff. This means you can order prescription and non-prescription medicines through our online chemist from your home or from work and not have to travel to your pharmacist.</p>
+                        <div class="range range-40">
+                            <div class="cell-xs-5">
+                                <div class="icon-unit">
+                                    <div class="icon-unit-left"><img src="images/icon-1-47x40.png" alt="" width="47" height="40" />
+                                    </div>
+                                    <div class="icon-unit-body">
+                                        <h5 class="text-bold">Private Prescriptions</h5>
+                                        <p>Get your private prescriptions fulfilled and delivered to your door.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell-xs-5">
+                                <div class="icon-unit">
+                                    <div class="icon-unit-left"><img src="images/icon-2-24x48.png" alt="" width="24" height="48" />
+                                    </div>
+                                    <div class="icon-unit-body">
+                                        <h5 class="text-bold">Safe & Secure</h5>
+                                        <p>Secure Order Processing Service is guaranteed!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell-xs-5">
+                                <div class="icon-unit">
+                                    <div class="icon-unit-left"><img src="images/icon-3-41x37.png" alt="" width="41" height="37" />
+                                    </div>
+                                    <div class="icon-unit-body">
+                                        <h5 class="text-bold">Online Doctor</h5>
+                                        <p>This service is a simple way to get the prescription medicine.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell-xs-5">
+                                <div class="icon-unit">
+                                    <div class="icon-unit-left"><img src="images/icon-4-41x36.png" alt="" width="41" height="36" />
+                                    </div>
+                                    <div class="icon-unit-body">
+                                        <h5 class="text-bold">24 Hour BP Monitoring</h5>
+                                        <p>Our members have access to 24 hour blood pressure monitoring.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<?php
+        $method = ob_get_contents();
+        ob_end_clean();
+        return $method;
+    }
+    
+    public function getContact()
+    {
+        ob_start();
+        ?>
+        <!-- Get in Touch-->
+        <section class="section section-lg bg-white">
+            <div class="shell">
+                <h3 class="section-title">Locations</h3>
+                <div class="range range-30">
+                		<div class="cell-md-5">
+                        <h3 class="section-title">Get in Touch</h3>
+                        <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="http://livedemo00.template-help.com/wt_prod-2273/bat/rd-mailform.php" style="max-width: 584px">
+                            <div class="range range-xs-right range-20 range-narrow">
+                                <div class="cell-sm-5">
+                                    <div class="form-wrap form-wrap-validation">
+                                        <label class="form-label" for="forms-name">Enter your name</label>
+                                        <input class="form-input" id="forms-name" type="text" name="name" data-constraints="@Required">
+                                    </div>
+                                </div>
+                                <div class="cell-sm-5">
+                                    <div class="form-wrap form-wrap-validation">
+                                        <label class="form-label" for="forms-name-2">Enter your surname</label>
+                                        <input class="form-input" id="forms-name-2" type="text" name="name" data-constraints="@Required">
+                                    </div>
+                                </div>
+                                <div class="cell-sm-5">
+                                    <div class="form-wrap form-wrap-validation">
+                                        <label class="form-label" for="forms-phone">Your phone</label>
+                                        <input class="form-input" id="forms-phone" type="text" name="phone" data-constraints="@Numeric @Required">
+                                    </div>
+                                </div>
+                                <div class="cell-sm-5">
+                                    <div class="form-wrap form-wrap-validation">
+                                        <label class="form-label" for="forms-email">Your email</label>
+                                        <input class="form-input" id="forms-email" type="email" name="email" data-constraints="@Email @Required">
+                                    </div>
+                                </div>
+                                <div class="cell-sm-10">
+                                    <div class="form-wrap form-wrap-validation">
+                                        <label class="form-label" for="forms-message">Your Message</label>
+                                        <textarea class="form-input" id="forms-message" name="message" data-constraints="@Required"></textarea>
+                                    </div>
+                                </div>
+                                <div class="cell-sm-5 cell-md-3">
+                                    <div class="form-button">
+                                        <button class="button button-primary button-block button-square" type="submit">send message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="cell-md-5">
+                        <h4>Tukwila Office</h4>
+                        <div class="contact-info-block">
+                            <div class="range range-30 range-xs-justify">
+                                <div class="cell-sm-4">
+                                    <ul class="list list-contact">
+                                        <li>Phone: <a class="text-bold" href="tel:#">+1 (800) 123 1246 </a></li>
+                                        <li>Fax: <a class="text-bold" href="tel:#">+1 (800) 123 1286</a></li>
+                                    </ul>
+                                    <p><a href="mailto:#">mail@demolink.org</a></p>
+                                </div>
+                                <div class="cell-sm-4">
+                                    <p>14973 Interurban Ave S <br>Suite 101 <br>Tukwila, WA 98168<br>Mon-Fri: 8:00 AM - 5:00 PM </p>
+                                </div>
+                                <div class="cell-xs-10">
+                                    <h5 class="text-bold">From Houston (Toolway)</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rd-google-map rd-google-map__model" data-zoom="12" data-y="40.643180" data-x="-73.9874068" data-styles="">
+                            <ul class="map_locations">
+                                <li data-y="40.643180" data-x="-73.9874068">
+                                    <p>9870 St Vincent Place, Glasgow, DC 45 Fr 45.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<?php
         $method = ob_get_contents();
         ob_end_clean();
         return $method;

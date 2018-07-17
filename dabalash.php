@@ -6,7 +6,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 require_once 'backends/public.php';
 require_once ($root.'/views/Layout_View.php');
 
-$section = "index";
+$section = "dabalash";
 
 $data 		= $backend->loadBackend($section);
 // 	var_dump($data);

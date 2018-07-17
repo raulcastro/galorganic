@@ -20,9 +20,10 @@ RewriteRule ^sitemap.xml$ sitemap.xml
 RewriteBase /
 
 #RewriteRule ^(.*)\.html $1.php
-RewriteRule ^services/$ 		/services.php
-RewriteRule ^gallery/$ 		/gallery.php
-RewriteRule ^testimonials/$ 	/testimonials.php
-RewriteRule ^blog/$ 			/blog.php
-RewriteRule ^contact/$ 		/contact.php
+RewriteRule ^galorganic-tienda-en-linea/$ 		/productos.php
+RewriteRule ^galorganic-contacto/$ 		/contacto.php
+RewriteRule ^galorganic-acerca-de/$ 	/acerca-de.php
+RewriteRule ^comprar-colageno/$ 	/colageno.php
+RewriteRule ^comprar-contour/$ 	/contour.php
+RewriteRule ^comprar-dabalash/$ 	/dabalash.php
 
