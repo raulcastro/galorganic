@@ -542,7 +542,18 @@ class Layout_View
                     <div class="cell-lg-10">
                         <h3 class="section-title">COLÁGENO HIDROLIZADO GALORGANIC</h3>
                         <div class="range range-60">
-                            <div class="cell-md-5"><img src="images/piel-de-naranja-2-2_orig.png" alt="" width="541" height="369">
+                            <div class="cell-md-5">
+                            		<div class="row">
+                            			<div class="cell-md-12 m-bottom">
+                            				<img src="images/piel-de-naranja-2-2_orig.png" alt="" width="541" height="369">
+                            			</div>
+									<div class="cell-md-12 m-bottom">
+                            				<img src="images/piel-de-naranja-2-2_orig.png" alt="" width="541" height="369">
+                            			</div>	
+                            			<div class="cell-md-12 m-bottom">
+                            				<img src="images/piel-de-naranja-2-2_orig.png" alt="" width="541" height="369">
+                            			</div>	
+                            		</div>
                             </div>
                             <div class="cell-md-5">
                                 <h3 class="section-title">¿Qué es el Colágeno?</h3>
