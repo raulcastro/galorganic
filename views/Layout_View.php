@@ -193,84 +193,32 @@ class Layout_View
                             <!-- RD Navbar Toggle-->
                             <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                             <div class="rd-navbar-brand">
-                                <a class="brand-name" href="index.php"><img src="/images/galorganic.png" alt="" width="182" height="53" /></a>
+                                <a class="brand-name" href="/"><img src="/images/galorganic.png" alt="" width="182" height="53" /></a>
                             </div>
                             <!-- RD Navbar Brand-->
-                            
                         </div>
                         <div class="rd-navbar-aside-right">
-                            
                             <div class="rd-navbar-nav-wrap rd-navbar-nav-wrap-default">
                                 <!-- RD Navbar Nav-->
                                 <ul class="rd-navbar-nav">
-                                    <li class="active"><a href="/"> Información productos</a></li>
-                                    <li><a href="/galorganic-tienda-en-linea/"> Tienda en línea</a>
+                                    <li <?php if ($_GET['section'] == ""){echo ' class="active"';}?>>
+                                    		<a href="/"> Información productos</a>
                                     </li>
-                                    <li><a href="/galorganic-acerca-de/"> Acerca de Galorganic</a>
+                                    <li <?php if ($_GET['section'] == "productos"){echo ' class="active"';}?>>
+                                    		<a href="/galorganic-tienda-en-linea/"> Tienda en línea</a>
                                     </li>
-                                    <li><a href="/galorganic-contacto/">Contacto</a>
+                                    <li <?php if ($_GET['section'] == "about"){echo ' class="active"';}?>>
+                                    		<a href="/galorganic-acerca-de/"> Acerca de Galorganic</a>
                                     </li>
-                                    <!--<li><a href="news.html">News</a>
-                                        <ul class="rd-navbar-dropdown">
-                                            <li><a href="news-page.html">News Page</a></li>
-                                        </ul>
-                                    </li>--->
-                                    <!--<li><a href="contacts.html">Contacts</a></li>
-                                    <li><a href="index.html#">Pages</a>
-                                        RD Navbar Megamenu-->
-                                        <ul class="rd-navbar-megamenu">
-                                            <li class="rd-navbar-megamenu-item">
-                                                <div class="rd-navbar-megamenu-item-inner">
-                                                    <h6 class="rd-navbar-megamenu-title">Pages 1</h6>
-                                                    <div class="rd-navbar-megamenu-divider"></div>
-                                                    <ul>
-                                                        <li><a href="media.html">Media</a></li>
-                                                        <li><a href="media-grid.html">Media grid</a></li>
-                                                        <li><a href="log-in.html">Log In</a></li>
-                                                        <li><a href="register.html">Register</a></li>
-                                                        <li><a href="search-results.html">Search results</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="rd-navbar-megamenu-item">
-                                                <div class="rd-navbar-megamenu-item-inner">
-                                                    <h6 class="rd-navbar-megamenu-title">Pages 2</h6>
-                                                    <div class="rd-navbar-megamenu-divider"></div>
-                                                    <ul>
-                                                        <li><a href="coming-soon.html">Coming Soon</a></li>
-                                                        <li><a href="503-page.html">503</a></li>
-                                                        <li><a href="404-page.html">404</a></li>
-                                                        <li><a href="site-map.html">Site Map</a></li>
-                                                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                                        <li><a href="maintenance.html">Maintenance</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="rd-navbar-megamenu-item">
-                                                <div class="rd-navbar-megamenu-item-inner">
-                                                    <h6 class="rd-navbar-megamenu-title">elements</h6>
-                                                    <div class="rd-navbar-megamenu-divider"></div>
-                                                    <ul>
-                                                        <li><a href="typography.html">Typography</a></li>
-                                                        <li><a href="tabs-and-accordions.html">Tabs and accordions</a></li>
-                                                        <li><a href="progress-bars.html">Progress Bars</a></li>
-                                                        <li><a href="forms.html">Forms</a></li>
-                                                        <li><a href="tables.html">Tables</a></li>
-                                                        <li><a href="grid.html">Grid</a></li>
-                                                        <li><a href="buttons.html">Buttons</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                    <li <?php if ($_GET['section'] == "contacto"){echo ' class="active"';}?>>
+                                    		<a href="/galorganic-contacto/">Contacto</a>
+                                    </li>
                                 </ul>
-                                <!--<div class="rd-navbar-call">
-                                    <!--<div class="unit-link-with-icon unit unit-spacing-xs unit-horizontal">
-                                        <div class="unit-left"><span class="icon icon-md-big icon-secondary mdi-phone"></span></div>
-                                        <div class="unit-body"><a href="tel:#">1-800-700-6200</a></div>
-                                    </div>
-                                </div>-->
-                         
-                                
+                             </div>
+						</div>
+					</div>
+				</nav>
+			</div>
         </header>
         <?php
         $header = ob_get_contents();
