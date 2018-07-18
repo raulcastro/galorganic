@@ -75,6 +75,8 @@ class Layout_View
     					    //echo self :: getSlider();
     					    //echo self :: getIndexItems();
     					    echo self :: getProductOne();
+                            echo self :: getProductTwo();
+                            echo self :: getProductThree();
     					    //echo self :: getIndexProductCategories();
     					    //echo self :: getIndexWelcome();
     					    //echo self :: getLatestFromBlog();
@@ -224,11 +226,11 @@ class Layout_View
                                         <ul class="rd-navbar-dropdown">
                                             <li><a href="news-page.html">News Page</a></li>
                                         </ul>
-                                    </li>
-                                    <li><a href="contacts.html">Contacts</a></li>
+                                    </li>--->
+                                    <!--<li><a href="contacts.html">Contacts</a></li>
                                     <li><a href="index.html#">Pages</a>
-                                        <!-- RD Navbar Megamenu-->
-                                        <!--<ul class="rd-navbar-megamenu">
+                                        RD Navbar Megamenu-->
+                                        <ul class="rd-navbar-megamenu">
                                             <li class="rd-navbar-megamenu-item">
                                                 <div class="rd-navbar-megamenu-item-inner">
                                                     <h6 class="rd-navbar-megamenu-title">Pages 1</h6>
@@ -272,23 +274,13 @@ class Layout_View
                                                 </div>
                                             </li>
                                         </ul>
-                                    </li>
-                                </ul>--->
+                                </ul>
                                 <!--<div class="rd-navbar-call">
                                     <!--<div class="unit-link-with-icon unit unit-spacing-xs unit-horizontal">
                                         <div class="unit-left"><span class="icon icon-md-big icon-secondary mdi-phone"></span></div>
                                         <div class="unit-body"><a href="tel:#">1-800-700-6200</a></div>
                                     </div>
                                 </div>-->
-                                    
-                           
-                                </ul>
-                                </nav>
-                                        
-                                </div>
-                                </div>
-                            </div>
-                        </div>
                          
                                 
         </header>
@@ -549,7 +541,102 @@ class Layout_View
                 <div class="range range-60">
                     <div class="cell-lg-10">
                         <div class="range range-60">
-                            <div class="cell-md-5"><img src="images/piel-de-naranja-2-2_orig.jpg" alt="" width="541" height="369">
+                            <div class="cell-md-5"><img src="images/piel-de-naranja-2-2_orig.png" alt="" width="541" height="369">
+                            </div>
+                            <div class="cell-md-5">
+                                <h3 class="section-title">¿Qué es el Colágeno?</h3>
+                                <p>El colágeno es la proteína más abundante de nuestro cuerpo y representa el:<br>
+                                    · El 80% el tejido conjuntivo (músculos, tendones, ligamentos)<br>
+                                    · El 75% de nuestra piel<br>
+                                    · El 30% de todo nuestro organismo.</p>
+                                <h3 class="section-title">Beneficios de tomar colágeno hidrolizado</h3>
+                                <p class="text-bold text-gray-darker">
+                                    El fortalecimiento        arterial.<br>
+                                    La reconstrucción de articulaciones.<br>
+                                    Engrosamiento del cabello y las uñas.<br>
+                                    Aumento de la energía.<br>
+                                    Disminución de arrugas.<br>
+                                    Cicatrización de Heridas y Fracturas<br>
+                                    La reconstrucción de órganos: el corazón, la próstata, los pulmones, el hígado, los riñones, los vasos sanguíneos, etc.<br>
+                                    Problemas Crónicos Que Puede Auxiliar Colágeno Hidrolizado
+                                    Osteoporosis.<br>
+                                    Hipertensión.<br>
+                                    Artritis en las articulaciones.<br>
+                                    Incontinencia urinaria<br>
+                                    Fatiga crónica.<br>
+                                    Diabetes.<br>
+                                    Respiración superficial.<br>
+                                    Problemas de la piel<br>
+                                                    
+                                    Cuando se toma regularmente, el Colágeno Hidrolizado puede aumentar la masa muscular y provocar una aceleración del metabolismo, lo que trae como consecuencia natural, la pérdida de grasa en el cuerpo. Por su conocido efecto “saciador” y su prácticamente nula composición de grasas y carbohidratos, el Colágeno Hidrolizado se considera un importante auxiliar en el control de peso.
+                                    Otros testimonios mencionan una ganancia de energía, un sueño reparador, la desaparición de los problemas de la piel, disminución de la pérdida de los cabellos, mejora de la vista, aumento de la libido, desaparición de los dolores de espalda y reducción de los dolores menstruales.
+                                    NO ENGORDA</p>
+                                
+                                    <h3 class="section-title">¿Qué Diferencia hay entre tomar pastillas de colágeno a tomarlo en polvo para bebida?</h3>
+                                <p class="text-bold text-gray-darker">
+                                    Es muy sencillo, para que un colágeno te haga efecto es necesario tomar mínimo 10 gramos por día, a cada cápsula le cabe un gramo, es por eso que los tratamientos en cápsula son muy poco efectivos, caros y se ven los resultados muy largo plazo, debido a que tendrías que tomar 10 cápsulas por día como mínimo y máximo 15.</p>
+
+                                
+                                
+                                
+                                <a class="button button-primary" href="#"> Comprar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell-lg-2">
+                        <div class="range range-50">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <?php
+        $method = ob_get_contents();
+        ob_end_clean();
+        return $method;
+    }
+    
+     public function getProductTwo()
+    {
+        ob_start();
+        ?>
+        <section class="section section-lg bg-white text-left">
+            <div class="shell">
+                <div class="range range-60">
+                    <div class="cell-lg-10">
+                        <div class="range range-60">
+                            <div class="cell-md-5"><img src="images/contour-2_orig.png" alt="" width="541" height="369">
+                            </div>
+                            <div class="cell-md-5">
+                                <h3 class="section-title">wellness65+</h3>
+                                <p>Wellness65+ offers 20% off the entire store on the first Wednesday of every month. If you are age 65, or know someone who is, enroll for free and plan ahead to purchase your non-prescription items once a month on Wellness65+ Wednesdays. Ready to join for free? Just click on the button at the bottom of the post.</p>
+                                <p class="text-bold text-gray-darker">Readers know that you can score great deals and even free items when you follow the sales and use coupons at Pharmacy. In addition to the 20% discount for seniors, Pharmacy also offers more perks for becoming a member of their Wellness65+ program.</p><a class="button button-primary" href="#"> book this service</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell-lg-2">
+                        <div class="range range-50">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <?php
+        $method = ob_get_contents();
+        ob_end_clean();
+        return $method;
+    }
+    
+    public function getProductThree()
+    {
+        ob_start();
+        ?>
+        <section class="section section-lg bg-white text-left">
+            <div class="shell">
+                <div class="range range-60">
+                    <div class="cell-lg-10">
+                        <div class="range range-60">
+                            <div class="cell-md-5"><img src="images/dabalash.jpg" alt="" width="541" height="369">
                             </div>
                             <div class="cell-md-5">
                                 <h3 class="section-title">wellness65+</h3>
