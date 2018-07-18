@@ -864,14 +864,14 @@ class Layout_View
                 <div class="range range-40">
                     <div class="cell-lg-3 cell-sm-5">
                         <div style="max-width: 294px">
-                            <h5 class="section-title">Contact Information</h5>
+                            <h5 class="section-title">Contacto</h5>
                             <ul class="list list-lg">
                                 <li>
                                     <div class="unit unit-spacing-xs unit-horizontal unit-custom unit-top">
                                         <div class="unit-left">
-                                            <p class="large">Phone:</p>
+                                            <p class="large">tel:</p>
                                         </div>
-                                        <div class="unit-body"><a class="link-footer large text-spacing-75 font-sec" href="tel:#"></a>(33) 2308 5711</div>
+                                        <div class="unit-body"><a class="link-footer large text-spacing-75 font-sec" href="tel:(33) 2308 5711"></a>(33) 2308 5711</div>
                                     </div>
                                 </li>
                                 <li>
@@ -879,15 +879,15 @@ class Layout_View
                                         <div class="unit-left">
                                             <p class="large">E-mail:</p>
                                         </div>
-                                        <div class="unit-body" style="position: relative; top: -1px"><a class="link-footer large" href="mailto:#">sagalorganic@gmail.com</a></div>
+                                        <div class="unit-body" style="position: relative; top: -1px"><a class="link-footer large" href="/galorganic-contacto/">sagalorganic@gmail.com</a></div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="unit unit-spacing-xs unit-horizontal">
                                         <div class="unit-left">
-                                            <p class="large">Address: </p>
+                                            <p class="large">Direccion: </p>
                                         </div>
-                                        <div class="unit-body"><a class="link-footer" href="index.html#">Allende 95 Local A
+                                        <div class="unit-body"><a class="link-footer" href="/galorganic-contacto/">Allende 95 Local A
                                             Col. Centro
                                             Sahuayo, Mich.
                                             C.P. 59000</a></div>
@@ -919,7 +919,7 @@ class Layout_View
                     <div class="cell-lg-4">
                         <div>
                             <h5 class="section-title">GALORGANIC</h5>
-                            <p class="text-secondary-light">"SA-Galorganic es una empresa 100% mexicana enfocada en la distribución de productos de salud y belleza, comprometidos en brindar alta calidad y siempre cuidando el bienestar de nuestros clientes ofreciendo seguridad y confiabilidad." </p><a class="button button-primary" href="products.html">Visit our store</a>
+                            <p class="text-secondary-light">"SA-Galorganic es una empresa 100% mexicana enfocada en la distribución de productos de salud y belleza, comprometidos en brindar alta calidad y siempre cuidando el bienestar de nuestros clientes ofreciendo seguridad y confiabilidad." </p><a class="button button-primary" href="/galorganic-tienda-en-linea/">Tienda en linea</a>
                         </div>
                     </div>
                 </div>
@@ -949,7 +949,7 @@ class Layout_View
                                     </figure>
                                     <div class="product-item-caption">
                                         <p><a href="single-product.html">Colágeno hidrolizado (100% puro)</a></p>
-                                        <h5 class="product-price">$600</h5><a class="button button-primary" href="/comprar-colageno/">Ver mas</a>
+                                        <h5 class="product-price">$600.00</h5><a class="button button-primary" href="/comprar-colageno/">Ver mas</a>
                                     </div>
                                 </div>
                             </div>
@@ -960,7 +960,7 @@ class Layout_View
                                     </figure>
                                     <div class="product-item-caption">
                                         <p><a href="single-product.html">Contour (Baja de Peso)</a></p>
-                                        <h5 class="product-price">$750</h5><a class="button button-primary" href="/comprar-contour/">Ver mas</a>
+                                        <h5 class="product-price">$750.00</h5><a class="button button-primary" href="/comprar-contour/">Ver mas</a>
                                     </div>
                                 </div>
                             </div>
@@ -986,7 +986,7 @@ class Layout_View
         return $method;
     }
     
-    public function getContour()
+    public function getcolageno()
     {
         ob_start();
         ?>
@@ -1104,7 +1104,7 @@ class Layout_View
         return $method;
     }
     
-    public function getColageno()
+    public function getContour()
     {
         ob_start();
         ?>
@@ -1181,7 +1181,7 @@ class Layout_View
                                     
                                 </ul>
                             </div>
-                            <div class="cell-xs-10"><a class="button button-primary" href="shopping-cart.html">Comprar ahora</a></div>
+                            <div class="cell-xs-10"><a class="button button-primary" href="/comprar-contour/">Comprar ahora</a></div>
                         </div>
                     </div>
                 </div>
