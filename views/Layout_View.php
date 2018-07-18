@@ -540,12 +540,13 @@ class Layout_View
             <div class="shell">
                 <div class="range range-60">
                     <div class="cell-lg-10">
+                        <h3 class="section-title">COLÁGENO HIDROLIZADO GALORGANIC</h3>
                         <div class="range range-60">
                             <div class="cell-md-5"><img src="images/piel-de-naranja-2-2_orig.png" alt="" width="541" height="369">
                             </div>
                             <div class="cell-md-5">
                                 <h3 class="section-title">¿Qué es el Colágeno?</h3>
-                                <p>El colágeno es la proteína más abundante de nuestro cuerpo y representa el:<br>
+                                <p class="text-bold text-gray-darker">El colágeno es la proteína más abundante de nuestro cuerpo y representa el:<br>
                                     · El 80% el tejido conjuntivo (músculos, tendones, ligamentos)<br>
                                     · El 75% de nuestra piel<br>
                                     · El 30% de todo nuestro organismo.</p>
@@ -604,13 +605,40 @@ class Layout_View
             <div class="shell">
                 <div class="range range-60">
                     <div class="cell-lg-10">
+                        <h3 class="section-title">CONTOUR TE AYUDA A BAJAR DE PESO</h3>
                         <div class="range range-60">
                             <div class="cell-md-5"><img src="images/contour-2_orig.png" alt="" width="541" height="369">
                             </div>
                             <div class="cell-md-5">
-                                <h3 class="section-title">wellness65+</h3>
-                                <p>Wellness65+ offers 20% off the entire store on the first Wednesday of every month. If you are age 65, or know someone who is, enroll for free and plan ahead to purchase your non-prescription items once a month on Wellness65+ Wednesdays. Ready to join for free? Just click on the button at the bottom of the post.</p>
-                                <p class="text-bold text-gray-darker">Readers know that you can score great deals and even free items when you follow the sales and use coupons at Pharmacy. In addition to the 20% discount for seniors, Pharmacy also offers more perks for becoming a member of their Wellness65+ program.</p><a class="button button-primary" href="#"> book this service</a>
+                                <h3 class="section-title">¿Que es Contour ?</h3>
+                                <p class="text-bold text-gray-darker">Es un suplemento alimenticio 100% natural su compuesto activo es la semilla de uva y alga parda que te ayuda a bloquear la asimilación de carbohidratos y grasas simples un 50%
+                                </p>
+                                <h3 class="section-title">Cuantos kilos se bajan</h3>
+                                <p class="text-bold text-gray-darker">Depende de cada organismo, el primer mes notas mas talla que peso porque es un mes de desintoxicación  el segundo mes mas peso que talla y los siguientes meses peso.<br>
+                                    Estarás bajando al finalizar el bote que te incluye tratamiento para dos meses de 3 a 5kg mínimo
+                                    2 tallas aprox.<br>
+                                    Entre más tiempo lo tomes el metabolismo se acelera más y bajas más rápido.
+                                </p>
+                                <h3 class="section-title">¿Es necesario hacer dieta  y ejercicio?</h3>
+                                <p class="text-bold text-gray-darker">No  es obligatorio llevar una dieta muy rigurosa, pero debemos estar consientes que si se recomienda bajar un poco el consumo de calorías y grasas para llegar al peso ideal más rápido con la ayuda de las pastillas, si se hace ejercicio es ideal si no de igual manera bajaras de peso pero un poco más lento.</p>
+                                <h3 class="section-title">¿Hay rebote?</h3>
+                                <p class="text-bold text-gray-darker">No hay rebote ni efectos secundarios ya que es un suplemento alimenticio y no dejarás de comer tus alimentos y tampoco es un medicamento que te hace eliminar la grasa si no que bloquea la asimilación de grasa y carb. Por lo que bajas de peso de manera natural.</p>
+                                <h3 class="section-title">Tiempo que se puede tomar</h3>
+                                <p class="text-bold text-gray-darker">Se puede tomar hasta llegar al peso ideal deseado.. (mínimo 2 meses, 1 bote para ver cambios )</p>
+                                <h3 class="section-title">Personas embarazadas y lactando lo pueden tomar</h3>
+                                <p class="text-bold text-gray-darker">No</p>
+                                <h3 class="section-title">Otros beneficios</h3>
+                                <p class="text-bold text-gray-darker">
+                                    Genera saciedad conforme pase el tiempo y lo tomes.<br>
+                                    Es un antioxidante<br>
+                                    Así mismo, este mismo compuesto tiene la propiedad de brindar saciedad, reduciendo el consumo de alimentos, lo cual verás reflejado en una menor ingesta calórica.<br>
+                                    Estimula la glándula tiroidea<br>
+                                    Acelera el metabolismo.</p>
+                                
+                                <h3 class="section-title">Pueden tomarlo los niños</h3>
+                                
+                                <p class="text-bold text-gray-darker">Si tienen un problema de sobrepeso lo pueden tomar.</p>
+                                <a class="button button-primary" href="#"> Comprar Ahora</a>
                             </div>
                         </div>
                     </div>
@@ -635,13 +663,15 @@ class Layout_View
             <div class="shell">
                 <div class="range range-60">
                     <div class="cell-lg-10">
+                        <h3 class="section-title">Dabalash Pestañas Extra Largas</h3>
                         <div class="range range-60">
                             <div class="cell-md-5"><img src="images/dabalash.jpg" alt="" width="541" height="369">
                             </div>
                             <div class="cell-md-5">
-                                <h3 class="section-title">wellness65+</h3>
-                                <p>Wellness65+ offers 20% off the entire store on the first Wednesday of every month. If you are age 65, or know someone who is, enroll for free and plan ahead to purchase your non-prescription items once a month on Wellness65+ Wednesdays. Ready to join for free? Just click on the button at the bottom of the post.</p>
-                                <p class="text-bold text-gray-darker">Readers know that you can score great deals and even free items when you follow the sales and use coupons at Pharmacy. In addition to the 20% discount for seniors, Pharmacy also offers more perks for becoming a member of their Wellness65+ program.</p><a class="button button-primary" href="#"> book this service</a>
+                                <h3 class="section-title">Dabalash Pestañas Extra Largas</h3>
+                                <p>Dabalash, amplificador del crecimiento de pestañas y cejas es la última innovación en la ciencia cosmética. Su diseño y creación provienen de uno de los mejores laboratorios especializados en productos cosméticos. Esta fórmula transformara tus pestanas al máximo, dejándolas más largas, gruesas y abundantes y rellenara tus cejas.
+                                    Nuestra fórmula Dabalash no irrita, ya que no contiene parabenos ni sal, los cuales son dañinos para la piel y el cabello. Contiene queratina, el cual es un ingrediente que nutre y fortalece la pestaña o la ceja. Al combinar esto con nuestro ingrediente activo, hacen que Dabalash sea único y original, marcando así la diferencia con cualquier otro producto.</p>
+                                <a class="button button-primary" href="#"> Compra Ahora</a>
                             </div>
                         </div>
                     </div>
