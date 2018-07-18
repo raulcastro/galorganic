@@ -77,6 +77,7 @@ class Layout_View
     					    echo self :: getProductOne();
                             echo self :: getProductTwo();
                             echo self :: getProductThree();
+                            
     					    //echo self :: getIndexProductCategories();
     					    //echo self :: getIndexWelcome();
     					    //echo self :: getLatestFromBlog();
@@ -192,7 +193,7 @@ class Layout_View
                             <!-- RD Navbar Toggle-->
                             <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                             <div class="rd-navbar-brand">
-                                <a class="brand-name" href="index.html"><img src="/images/galorganic.png" alt="" width="182" height="53" /></a>
+                                <a class="brand-name" href="index.php"><img src="/images/galorganic.png" alt="" width="182" height="53" /></a>
                             </div>
                             <!-- RD Navbar Brand-->
                             
@@ -204,23 +205,10 @@ class Layout_View
                                 <ul class="rd-navbar-nav">
                                     <li class="active"><a href="/"> Información productos</a></li>
                                     <li><a href="/galorganic-tienda-en-linea/"> Tienda en línea</a>
-                                        <ul class="rd-navbar-dropdown">
-                                            <li><a href="faq.html">FAQ</a></li>
-                                            <li><a href="careers.html">Careers </a></li>
-                                        </ul>
                                     </li>
                                     <li><a href="/galorganic-acerca-de/"> Acerca de Galorganic</a>
-                                        <ul class="rd-navbar-dropdown">
-                                            <li><a href="single-service.html">Single Service</a></li>
-                                        </ul>
                                     </li>
                                     <li><a href="/galorganic-contacto/">Contacto</a>
-                                        <ul class="rd-navbar-dropdown">
-                                            <li><a href="categories.html">Categories</a></li>
-                                            <li><a href="products.html">Products</a></li>
-                                            <li><a href="single-product.html">Single Product</a></li>
-                                            <li><a href="shopping-cart.html">Cart Page</a></li>
-                                        </ul>
                                     </li>
                                     <!--<li><a href="news.html">News</a>
                                         <ul class="rd-navbar-dropdown">
@@ -548,10 +536,10 @@ class Layout_View
                             				<img src="images/piel-de-naranja-2-2_orig.png" alt="" width="541" height="369">
                             			</div>
 									<div class="cell-md-12 m-bottom">
-                            				<img src="images/piel-de-naranja-2-2_orig.png" alt="" width="541" height="369">
+                            				<img src="images/nail-polish-question2_orig.png" alt="" width="541" height="369">
                             			</div>	
                             			<div class="cell-md-12 m-bottom">
-                            				<img src="images/piel-de-naranja-2-2_orig.png" alt="" width="541" height="369">
+                            				<img src="images/consejos-para-mantener-unas-rodillas-sanas-joya-life-3_orig.png" alt="" width="541" height="369">
                             			</div>	
                             		</div>
                             </div>
@@ -618,7 +606,21 @@ class Layout_View
                     <div class="cell-lg-10">
                         <h3 class="section-title">CONTOUR TE AYUDA A BAJAR DE PESO</h3>
                         <div class="range range-60">
-                            <div class="cell-md-5"><img src="images/contour-2_orig.png" alt="" width="541" height="369">
+                            <div class="cell-md-5">
+                            		<div class="row">
+                            			<div class="cell-md-12 m-bottom">
+                            				<img src="images/contour-2_orig.png" alt="" width="541" height="369">
+                            			</div>
+									<div class="cell-md-12 m-bottom">
+                            				<img src="images/contour-baja-de-peso_orig.png" alt="" width="541" height="369">
+                            			</div>	
+                            			<div class="cell-md-12 m-bottom">
+                            				<img src="images/contour-sin-rebote_orig.png" alt="" width="541" height="369">
+                            			</div>
+                                        <div class="cell-md-12 m-bottom">
+                            				<img src="images/contour-1_orig.png" alt="" width="541" height="369">
+                            			</div>	
+                            		</div>
                             </div>
                             <div class="cell-md-5">
                                 <h3 class="section-title">¿Que es Contour ?</h3>
@@ -777,7 +779,7 @@ class Layout_View
                     <div class="cell-lg-8">
                         <div class="box text-center text-sm-left">
                             <div class="box-left">
-                                <h3 class="section-title">Featured Products</h3>
+                                <h3 class="section-title">Tienda en Linea</h3>
                             </div>
                             <div class="box-right">
                                 <div class="owl-outer-navigation" id="owl-carousel-nav-2">
@@ -790,11 +792,11 @@ class Layout_View
                             <div class="item wow fadeInUp" data-wow-delay=".4s">
                                 <div class="product-item">
                                     <figure>
-                                        <a href="single-product.html"><img src="images/product-item-1-270x289.jpg" alt="" width="270" height="289" /></a>
+                                        <a href="single-product.html"><img src="images/s533592859111642943_p1_i4_w900.png" alt="" width="270" height="289" /></a>
                                     </figure>
                                     <div class="product-item-caption">
                                         <p><a href="single-product.html">Alavert Orally Disintegrating Tablets, 60 tab</a></p>
-                                        <h5 class="product-price">$24.98</h5><a class="button button-primary" href="shopping-cart.html">add to cart</a>
+                                        <h5 class="product-price"></h5><a class="button button-primary" href="shopping-cart.html">add to cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -983,38 +985,38 @@ class Layout_View
             <div class="shell">
                 <div class="range range-60">
                     <div class="cell-md-10">
-                        <h4 class="text-center text-sm-left">Featured Products</h4>
+                        <h4 class="text-center text-sm-left">Tienda en Linea</h4>
                         <div class="range range-40 range-lg-60">
                             <div class="cell-xs-5 cell-sm-33 cell-md-33">
                                 <div class="product-item">
                                     <figure>
-                                        <a href="single-product.html"><img src="/images/product-item-1-270x289.jpg" alt="" width="270" height="289" /></a>
+                                        <a href="single-product.html"><img src="/images/s533592859111642943_p1_i4_w900.png" alt="" width="270" height="289" /></a>
                                     </figure>
                                     <div class="product-item-caption">
-                                        <p><a href="single-product.html">Alavert Orally Disintegrating Tablets, 60 tab</a></p>
-                                        <h5 class="product-price">$24.98</h5><a class="button button-primary" href="/comprar-colageno/">add to cart</a>
+                                        <p><a href="single-product.html">Colágeno hidrolizado (100% puro)</a></p>
+                                        <h5 class="product-price">$600</h5><a class="button button-primary" href="/comprar-colageno/">Ver mas</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="cell-xs-5 cell-sm-33 cell-md-33">
                                 <div class="product-item">
                                     <figure>
-                                        <a href="single-product.html"><img src="/images/product-item-2-270x289.jpg" alt="" width="270" height="289" /></a>
+                                        <a href="single-product.html"><img src="/images/s533592859111642943_p2_i4_w900.png" alt="" width="270" height="289" /></a>
                                     </figure>
                                     <div class="product-item-caption">
-                                        <p><a href="single-product.html">Centrum Flavor Burst Chews, Mixed Fruit, 60 ea</a></p>
-                                        <h5 class="product-price">$8.99</h5><a class="button button-primary" href="/comprar-contour/">add to cart</a>
+                                        <p><a href="single-product.html">Contour (Baja de Peso)</a></p>
+                                        <h5 class="product-price">$750</h5><a class="button button-primary" href="/comprar-contour/">Ver mas</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="cell-xs-5 cell-sm-33 cell-md-33">
                                 <div class="product-item">
                                     <figure>
-                                        <a href="single-product.html"><img src="/images/product-item-3-270x289.jpg" alt="" width="270" height="289" /></a>
+                                        <a href="single-product.html"><img src="/images/s533592859111642943_p3_i3_w900.png" alt="" width="270" height="289" /></a>
                                     </figure>
                                     <div class="product-item-caption">
-                                        <p><a href="single-product.html">Depend for Women All in One Kit with Briefs and Underwear</a></p>
-                                        <h5 class="product-price">$4.99</h5><a class="button button-primary" href="/comprar-dabalash/">add to cart</a>
+                                        <p><a href="single-product.html">Dabalash (Tus Pestañas Crecen)</a></p>
+                                        <h5 class="product-price">$1,850.00</h5><a class="button button-primary" href="/comprar-dabalash/">Ver mas</a>
                                     </div>
                                 </div>
                             </div>
@@ -1040,7 +1042,7 @@ class Layout_View
                         <div class="product-slider">
                             <!-- Slick Carousel-->
                             <div class="slick-slider carousel-parent" data-arrows="false" data-loop="false" data-dots="false" data-swipe="true" data-items="1" data-child="#child-carousel" data-for="#child-carousel">
-                                <div class="item"><img src="/images/product-item-1-365x464.jpg" alt="" width="365" height="464" />
+                                <div class="item"><img src="/images/long-hair-feature_orig.png" alt="" width="365" height="464" />
                                 </div>
                                 <div class="item"><img src="/images/product-item-2-365x464.jpg" alt="" width="365" height="464" />
                                 </div>
@@ -1050,7 +1052,7 @@ class Layout_View
                                 </div>
                             </div>
                             <div class="slick-slider" id="child-carousel" data-for=".carousel-parent" data-arrows="true" data-loop="false" data-dots="false" data-swipe="true" data-items="4" data-xs-items="4" data-sm-items="4" data-md-items="4" data-lg-items="4" data-slide-to-scroll="1">
-                                <div class="item"><img src="/images/product-item-1-90x106.jpg" alt="" width="90" height="106" />
+                                <div class="item"><img src="/images/long-hair-feature_orig.png" alt="" width="90" height="106" />
                                 </div>
                                 <div class="item"><img src="/images/product-item-2-90x106.jpg" alt="" width="90" height="106" />
                                 </div>
@@ -1062,13 +1064,14 @@ class Layout_View
                         </div>
                     </div>
                     <div class="cell-md-5 cell-lg-5">
-                        <h3 class="section-title">Allegra Childrens 12 Hour Allergy Liquid, 4 oz</h3>
-                        <p class="large">We’ve got something for the little ones, too. Give your kids effective, non-drowsy, long-lasting relief in a raspberry-flavored liquid that goes down smooth.</p>
+                        <h3 class="section-title">Colágeno hidrolizado (100% puro)</h3>
+                        <p class="large">Polvo para preparar bebida 500g.
+
+                            Proporciona principalmente:</p>
                         <ul class="list-index">
-                            <li><span class="list-index-counter"></span>Fast acting</li>
-                            <li><span class="list-index-counter"></span>Non sedating</li>
-                            <li><span class="list-index-counter"></span>Indoor and outdoor allergy relief</li>
-                            <li><span class="list-index-counter"></span>Long lasting</li>
+                            <li><span class="list-index-counter"></span>Crecimiento de cabello y evita caída.</li>
+                            <li><span class="list-index-counter"></span>Prevención de las arrugas y la flacidez.</li>
+                            <li><span class="list-index-counter"></span>Restauración de dolor en articulaciones y huesos.</li>
                         </ul>
                         <p class="large">Manufactured by Allegra®</p>
                         <div class="range range-30">
