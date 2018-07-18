@@ -545,10 +545,17 @@ class Layout_View
                             </div>
                             <div class="cell-md-5">
                                 <h3 class="section-title">¿Qué es el Colágeno?</h3>
-                                <p class="text-bold text-gray-darker">El colágeno es la proteína más abundante de nuestro cuerpo y representa el:<br>
-                                    · El 80% el tejido conjuntivo (músculos, tendones, ligamentos)<br>
-                                    · El 75% de nuestra piel<br>
-                                    · El 30% de todo nuestro organismo.</p>
+                                <p class="text-bold text-gray-darker">El colágeno es la proteína más abundante de nuestro cuerpo y representa el:<br></p><br>
+                                    <ul>
+                                        <li>· El 80% el tejido conjuntivo (músculos, tendones, ligamentos)<br></li>
+                                        <li>· El 75% de nuestra piel<br></li>
+                                        <li>· El 30% de todo nuestro organismo.</li>
+                                        <li>· El 80% el tejido conjuntivo (músculos, tendones, ligamentos)<br></li>
+                                        <li>· El 75% de nuestra piel<br></li>
+                                        <li>· El 30% de todo nuestro organismo.</li>
+                                        </ul><br>
+                                    
+                                    
                                 <h3 class="section-title">Beneficios de tomar colágeno hidrolizado</h3>
                                 <p class="text-bold text-gray-darker">
                                     El fortalecimiento        arterial.<br>
@@ -579,7 +586,7 @@ class Layout_View
                                 
                                 
                                 
-                                <a class="button button-primary" href="#"> Comprar ahora</a>
+                                <a class="button button-primary" href="/comprar-colageno/"> Comprar ahora</a>
                             </div>
                         </div>
                     </div>
@@ -651,7 +658,7 @@ class Layout_View
                                 <h3 class="section-title">Pueden tomarlo los niños</h3>
                                 
                                 <p class="text-bold text-gray-darker">Si tienen un problema de sobrepeso lo pueden tomar.</p>
-                                <a class="button button-primary" href="#"> Comprar Ahora</a>
+                                <a class="button button-primary" href="/comprar-contour/"> Comprar Ahora</a>
                             </div>
                         </div>
                     </div>
@@ -684,7 +691,7 @@ class Layout_View
                                 <h3 class="section-title">Dabalash Pestañas Extra Largas</h3>
                                 <p>Dabalash, amplificador del crecimiento de pestañas y cejas es la última innovación en la ciencia cosmética. Su diseño y creación provienen de uno de los mejores laboratorios especializados en productos cosméticos. Esta fórmula transformara tus pestanas al máximo, dejándolas más largas, gruesas y abundantes y rellenara tus cejas.
                                     Nuestra fórmula Dabalash no irrita, ya que no contiene parabenos ni sal, los cuales son dañinos para la piel y el cabello. Contiene queratina, el cual es un ingrediente que nutre y fortalece la pestaña o la ceja. Al combinar esto con nuestro ingrediente activo, hacen que Dabalash sea único y original, marcando así la diferencia con cualquier otro producto.</p>
-                                <a class="button button-primary" href="#"> Compra Ahora</a>
+                                <a class="button button-primary" href="/comprar-dabalash/"> Compra Ahora</a>
                             </div>
                         </div>
                     </div>
@@ -1031,7 +1038,7 @@ class Layout_View
         return $method;
     }
     
-    public function getColageno()
+    public function getContour()
     {
         ob_start();
         ?>
@@ -1044,21 +1051,21 @@ class Layout_View
                             <div class="slick-slider carousel-parent" data-arrows="false" data-loop="false" data-dots="false" data-swipe="true" data-items="1" data-child="#child-carousel" data-for="#child-carousel">
                                 <div class="item"><img src="/images/long-hair-feature_orig.png" alt="" width="365" height="464" />
                                 </div>
-                                <div class="item"><img src="/images/product-item-2-365x464.jpg" alt="" width="365" height="464" />
+                                <div class="item"><img src="/images/s533592859111642943_p1_i4_w900.png" alt="" width="365" height="464" />
                                 </div>
-                                <div class="item"><img src="/images/product-item-3-365x464.jpg" alt="" width="365" height="464" />
+                                <div class="item"><img src="/images/arrugas-3_orig.png" alt="" width="365" height="464" />
                                 </div>
-                                <div class="item"><img src="/images/product-item-1-365x464.jpg" alt="" width="365" height="464" />
+                                <div class="item"><img src="/images/nail-polish-question2_orig.png" alt="" width="365" height="464" />
                                 </div>
                             </div>
                             <div class="slick-slider" id="child-carousel" data-for=".carousel-parent" data-arrows="true" data-loop="false" data-dots="false" data-swipe="true" data-items="4" data-xs-items="4" data-sm-items="4" data-md-items="4" data-lg-items="4" data-slide-to-scroll="1">
                                 <div class="item"><img src="/images/long-hair-feature_orig.png" alt="" width="90" height="106" />
                                 </div>
-                                <div class="item"><img src="/images/product-item-2-90x106.jpg" alt="" width="90" height="106" />
+                                <div class="item"><img src="/images/s533592859111642943_p1_i4_w900.png" alt="" width="90" height="106" />
                                 </div>
-                                <div class="item"><img src="/images/product-item-3-90x106.jpg" alt="" width="90" height="106" />
+                                <div class="item"><img src="/images/arrugas-3_orig.png" alt="" width="90" height="106" />
                                 </div>
-                                <div class="item"><img src="/images/product-item-1-90x106.jpg" alt="" width="90" height="106" />
+                                <div class="item"><img src="/images/nail-polish-question2_orig.png" alt="" width="90" height="106" />
                                 </div>
                             </div>
                         </div>
@@ -1073,9 +1080,9 @@ class Layout_View
                             <li><span class="list-index-counter"></span>Prevención de las arrugas y la flacidez.</li>
                             <li><span class="list-index-counter"></span>Restauración de dolor en articulaciones y huesos.</li>
                         </ul>
-                        <p class="large">Manufactured by Allegra®</p>
+                        
                         <div class="range range-30">
-                            <div class="cell-xs-10">
+                            <!--<div class="cell-xs-10">
                                 <ul class="list-inline list-inline-xs">
                                     <li><span class="icon fa-star icon-xs icon-primary"></span></li>
                                     <li><span class="icon fa-star icon-xs icon-primary"></span></li>
@@ -1084,48 +1091,35 @@ class Layout_View
                                     <li><span class="icon fa-star icon-xs icon-gray"></span></li>
                                     <li class="text-bold text-gray-darker list-inline-item-offset-sm">2 customer reviews</li>
                                 </ul>
-                            </div>
+                            </div>-->
                             <div class="cell-xs-10">
                                 <ul class="list-inline">
                                     <li>
                                         <input class="form-input" type="number" data-zeros="true" value="5" min="1" max="20">
                                     </li>
-                                    <li class="text-bold text-gray-darker">Quantity</li>
+                                    <li class="text-bold text-gray-darker">Cantidad</li>
                                 </ul>
                             </div>
                             <div class="cell-xs-10">
                                 <ul class="list-inline heading-4 text-bold">
-                                    <li class="text-strike text-gray-light">$48.00</li>
-                                    <li>$42.00</li>
+                                    
+                                    <li>MXN600.00</li>
                                 </ul>
                             </div>
                             <div class="cell-xs-10">
                                 <ul class="list-inline">
-                                    <li class="text-bold text-gray-darker">Share this</li>
+                                    <li class="text-bold text-gray-darker">Siguenos en</li>
                                     <li>
-                                        <a class="icon icon-primary fa-facebook" href="single-product.html#"></a>
+                                        <a class="icon icon-primary fa-facebook" href="https://www.facebook.com/Galorganic/"></a>
                                     </li>
+                            
                                     <li>
-                                        <a class="icon icon-primary fa-twitter" href="single-product.html#"></a>
+                                        <a class="icon icon-primary fa-instagram" href="https://www.instagram.com/galorganic/"></a>
                                     </li>
-                                    <li>
-                                        <a class="icon icon-primary fa-google-plus" href="single-product.html#"></a>
-                                    </li>
-                                    <li>
-                                        <a class="icon icon-primary fa-instagram" href="single-product.html#"></a>
-                                    </li>
-                                    <li>
-                                        <a class="icon icon-primary fa-pinterest-p" href="single-product.html#"></a>
-                                    </li>
-                                    <li>
-                                        <a class="icon icon-primary fa-rss" href="single-product.html#"></a>
-                                    </li>
-                                    <li>
-                                        <a class="icon icon-primary fa-envelope" href="single-product.html#"></a>
-                                    </li>
+                                    
                                 </ul>
                             </div>
-                            <div class="cell-xs-10"><a class="button button-primary" href="shopping-cart.html">add to cart</a></div>
+                            <div class="cell-xs-10"><a class="button button-primary" href="shopping-cart.html">Comprar ahora</a></div>
                         </div>
                     </div>
                 </div>
@@ -1139,10 +1133,10 @@ class Layout_View
                         <div class="isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group">
                             <div class="row row-condensed">
                                 <div class="col-xs-12 col-sm-6 col-md-3 isotope-item" data-filter="*">
-                                    <a class="media-item" data-lightgallery="item" href="/images/media-1-368x324_original.jpg"><img src="/images/media-1-368x324.jpg" alt="" width="368" height="324" /></a>
+                                    <a class="media-item" data-lightgallery="item" href="/images/arrugas-3_orig.png"><img src="/images/arrugas-3_orig.png" alt="" width="368" height="324"/></a>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-3 isotope-item" data-filter="Category 3">
-                                    <a class="media-item" data-lightgallery="item" href="/images/media-2-368x324_original.jpg"><img src="/images/media-2-368x324.jpg" alt="" width="368" height="324" /></a>
+                                    <a class="media-item" data-lightgallery="item" href="/images/piel-de-naranja-2-2_orig.png"><img src="/images/piel-de-naranja-2-2_orig.png" alt="" width="368" height="324" /></a>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-3 isotope-item" data-filter="Category 4">
                                     <a class="media-item" data-lightgallery="item" href="/images/media-3-368x324_original.jpg"><img src="/images/media-3-368x324.jpg" alt="" width="368" height="324" /></a>
@@ -1162,7 +1156,7 @@ class Layout_View
         return $method;
     }
     
-    public function getContour()
+    public function getColageno()
     {
         ob_start();
         ?>
@@ -1195,67 +1189,51 @@ class Layout_View
                         </div>
                     </div>
                     <div class="cell-md-5 cell-lg-5">
-                        <h3 class="section-title">Allegra Childrens 12 Hour Allergy Liquid, 4 oz</h3>
-                        <p class="large">We’ve got something for the little ones, too. Give your kids effective, non-drowsy, long-lasting relief in a raspberry-flavored liquid that goes down smooth.</p>
-                        <ul class="list-index">
+                        <h3 class="section-title">Contour (Baja de Peso)</h3>
+                        <p class="large">Pierde peso sin rebote.
+                            Envase con 60 cápsulas, suficiente para 2 meses.<br>
+
+                            Su principal compuesto activo a base de algas pardas y semilla de uva, actúa como bloqueador de un 58% de absorción de los carbohidratos y grasas.</p>
+                        <!--<ul class="list-index">
                             <li><span class="list-index-counter"></span>Fast acting</li>
                             <li><span class="list-index-counter"></span>Non sedating</li>
                             <li><span class="list-index-counter"></span>Indoor and outdoor allergy relief</li>
                             <li><span class="list-index-counter"></span>Long lasting</li>
-                        </ul>
-                        <p class="large">Manufactured by Allegra®</p>
+                        </ul>-->
+                       
                         <div class="range range-30">
-                            <div class="cell-xs-10">
-                                <ul class="list-inline list-inline-xs">
-                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
-                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
-                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
-                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
-                                    <li><span class="icon fa-star icon-xs icon-gray"></span></li>
-                                    <li class="text-bold text-gray-darker list-inline-item-offset-sm">2 customer reviews</li>
-                                </ul>
-                            </div>
+                            
                             <div class="cell-xs-10">
                                 <ul class="list-inline">
                                     <li>
                                         <input class="form-input" type="number" data-zeros="true" value="5" min="1" max="20">
                                     </li>
-                                    <li class="text-bold text-gray-darker">Quantity</li>
+                                    <li class="text-bold text-gray-darker">Cantidad</li>
                                 </ul>
                             </div>
                             <div class="cell-xs-10">
                                 <ul class="list-inline heading-4 text-bold">
-                                    <li class="text-strike text-gray-light">$48.00</li>
-                                    <li>$42.00</li>
+                                   
+                                    <li>MXN750.00</li>
                                 </ul>
                             </div>
                             <div class="cell-xs-10">
                                 <ul class="list-inline">
-                                    <li class="text-bold text-gray-darker">Share this</li>
+                                    <li class="text-bold text-gray-darker">siguenos en</li>
                                     <li>
-                                        <a class="icon icon-primary fa-facebook" href="single-product.html#"></a>
+                                        <a class="icon icon-primary fa-facebook" href="https://www.facebook.com/Galorganic/"></a>
                                     </li>
+                                    
+                                    
                                     <li>
-                                        <a class="icon icon-primary fa-twitter" href="single-product.html#"></a>
+                                        <a class="icon icon-primary fa-instagram" href="https://www.instagram.com/galorganic/"></a>
                                     </li>
-                                    <li>
-                                        <a class="icon icon-primary fa-google-plus" href="single-product.html#"></a>
-                                    </li>
-                                    <li>
-                                        <a class="icon icon-primary fa-instagram" href="single-product.html#"></a>
-                                    </li>
-                                    <li>
-                                        <a class="icon icon-primary fa-pinterest-p" href="single-product.html#"></a>
-                                    </li>
-                                    <li>
-                                        <a class="icon icon-primary fa-rss" href="single-product.html#"></a>
-                                    </li>
-                                    <li>
-                                        <a class="icon icon-primary fa-envelope" href="single-product.html#"></a>
-                                    </li>
+                                    
+                                    
+                                    
                                 </ul>
                             </div>
-                            <div class="cell-xs-10"><a class="button button-primary" href="shopping-cart.html">add to cart</a></div>
+                            <div class="cell-xs-10"><a class="button button-primary" href="shopping-cart.html">Comprar ahora</a></div>
                         </div>
                     </div>
                 </div>
@@ -1325,67 +1303,43 @@ class Layout_View
                         </div>
                     </div>
                     <div class="cell-md-5 cell-lg-5">
-                        <h3 class="section-title">Allegra Childrens 12 Hour Allergy Liquid, 4 oz</h3>
-                        <p class="large">We’ve got something for the little ones, too. Give your kids effective, non-drowsy, long-lasting relief in a raspberry-flavored liquid that goes down smooth.</p>
-                        <ul class="list-index">
-                            <li><span class="list-index-counter"></span>Fast acting</li>
-                            <li><span class="list-index-counter"></span>Non sedating</li>
-                            <li><span class="list-index-counter"></span>Indoor and outdoor allergy relief</li>
-                            <li><span class="list-index-counter"></span>Long lasting</li>
-                        </ul>
-                        <p class="large">Manufactured by Allegra®</p>
+                        <h3 class="section-title">Dabalash (Tus Pestañas Crecen)</h3>
+                        <p class="large">Tus propias pestañas y cejas crecen.<br>
+                            Resultados en 4 a 6 semanas.<br>
+                            Garantía de 90 días.</p>
+                    
                         <div class="range range-30">
                             <div class="cell-xs-10">
-                                <ul class="list-inline list-inline-xs">
-                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
-                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
-                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
-                                    <li><span class="icon fa-star icon-xs icon-primary"></span></li>
-                                    <li><span class="icon fa-star icon-xs icon-gray"></span></li>
-                                    <li class="text-bold text-gray-darker list-inline-item-offset-sm">2 customer reviews</li>
-                                </ul>
+                                
                             </div>
                             <div class="cell-xs-10">
                                 <ul class="list-inline">
                                     <li>
                                         <input class="form-input" type="number" data-zeros="true" value="5" min="1" max="20">
                                     </li>
-                                    <li class="text-bold text-gray-darker">Quantity</li>
+                                    <li class="text-bold text-gray-darker">cantidad</li>
                                 </ul>
                             </div>
                             <div class="cell-xs-10">
                                 <ul class="list-inline heading-4 text-bold">
-                                    <li class="text-strike text-gray-light">$48.00</li>
-                                    <li>$42.00</li>
+                                    
+                                    <li>MXN1,850.00</li>
                                 </ul>
                             </div>
                             <div class="cell-xs-10">
                                 <ul class="list-inline">
-                                    <li class="text-bold text-gray-darker">Share this</li>
+                                    <li class="text-bold text-gray-darker">Siguenos en</li>
                                     <li>
-                                        <a class="icon icon-primary fa-facebook" href="single-product.html#"></a>
+                                        <a class="icon icon-primary fa-facebook" href="https://www.facebook.com/Galorganic/"></a>
                                     </li>
+                                    
                                     <li>
-                                        <a class="icon icon-primary fa-twitter" href="single-product.html#"></a>
+                                        <a class="icon icon-primary fa-instagram" href="https://www.instagram.com/galorganic/"></a>
                                     </li>
-                                    <li>
-                                        <a class="icon icon-primary fa-google-plus" href="single-product.html#"></a>
-                                    </li>
-                                    <li>
-                                        <a class="icon icon-primary fa-instagram" href="single-product.html#"></a>
-                                    </li>
-                                    <li>
-                                        <a class="icon icon-primary fa-pinterest-p" href="single-product.html#"></a>
-                                    </li>
-                                    <li>
-                                        <a class="icon icon-primary fa-rss" href="single-product.html#"></a>
-                                    </li>
-                                    <li>
-                                        <a class="icon icon-primary fa-envelope" href="single-product.html#"></a>
-                                    </li>
+
                                 </ul>
                             </div>
-                            <div class="cell-xs-10"><a class="button button-primary" href="shopping-cart.html">add to cart</a></div>
+                            <div class="cell-xs-10"><a class="button button-primary" href="shopping-cart.html">Comprar ahora</a></div>
                         </div>
                     </div>
                 </div>
@@ -1430,12 +1384,12 @@ class Layout_View
         <section class="section section-lg bg-white">
             <div class="shell">
                 <div class="range range-30">
-                    <div class="cell-md-6"><img src="/images/about-01-803x458.jpg" alt="" width="803" height="458" />
+                    <div class="cell-md-6"><img src="/images/oficna_orig.png" alt="" width="803" height="458" />
                     </div>
                     <div class="cell-md-4">
-                        <h3 class="section-title">about pharmacy</h3>
-                        <p>We pride ourselves on bringing convenient healthcare and medicines, offering instant access to our online pharmacy services, professional doctors, and pharmacy staff. This means you can order prescription and non-prescription medicines through our online chemist from your home or from work and not have to travel to your pharmacist.</p>
-                        <div class="range range-40">
+                        <h3 class="section-title">Acerca de Sa-Galorganic</h3>
+                        <p>SA-Galorganic es una empresa 100% mexicana enfocada en la distribución de productos de salud y belleza, comprometidos en brindar alta calidad y siempre cuidando el bienestar de nuestros clientes ofreciendo seguridad y confiabilidad.</p>
+                        <!---<div class="range range-40">
                             <div class="cell-xs-5">
                                 <div class="icon-unit">
                                     <div class="icon-unit-left"><img src="images/icon-1-47x40.png" alt="" width="47" height="40" />
@@ -1476,7 +1430,7 @@ class Layout_View
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>--->
                     </div>
                 </div>
             </div>
@@ -1494,74 +1448,74 @@ class Layout_View
         <!-- Get in Touch-->
         <section class="section section-lg bg-white">
             <div class="shell">
-                <h3 class="section-title">Locations</h3>
+               
                 <div class="range range-30">
                 		<div class="cell-md-5">
-                        <h3 class="section-title">Get in Touch</h3>
+                        <h3 class="section-title">Contacto</h3>
                         <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="http://livedemo00.template-help.com/wt_prod-2273/bat/rd-mailform.php" style="max-width: 584px">
                             <div class="range range-xs-right range-20 range-narrow">
                                 <div class="cell-sm-5">
                                     <div class="form-wrap form-wrap-validation">
-                                        <label class="form-label" for="forms-name">Enter your name</label>
+                                        <label class="form-label" for="forms-name">Nombre</label>
                                         <input class="form-input" id="forms-name" type="text" name="name" data-constraints="@Required">
                                     </div>
                                 </div>
                                 <div class="cell-sm-5">
                                     <div class="form-wrap form-wrap-validation">
-                                        <label class="form-label" for="forms-name-2">Enter your surname</label>
+                                        <label class="form-label" for="forms-name-2">Enter Apellid</label>
                                         <input class="form-input" id="forms-name-2" type="text" name="name" data-constraints="@Required">
                                     </div>
                                 </div>
                                 <div class="cell-sm-5">
                                     <div class="form-wrap form-wrap-validation">
-                                        <label class="form-label" for="forms-phone">Your phone</label>
+                                        <label class="form-label" for="forms-phone">Telefono</label>
                                         <input class="form-input" id="forms-phone" type="text" name="phone" data-constraints="@Numeric @Required">
                                     </div>
                                 </div>
                                 <div class="cell-sm-5">
                                     <div class="form-wrap form-wrap-validation">
-                                        <label class="form-label" for="forms-email">Your email</label>
+                                        <label class="form-label" for="forms-email">Email</label>
                                         <input class="form-input" id="forms-email" type="email" name="email" data-constraints="@Email @Required">
                                     </div>
                                 </div>
                                 <div class="cell-sm-10">
                                     <div class="form-wrap form-wrap-validation">
-                                        <label class="form-label" for="forms-message">Your Message</label>
+                                        <label class="form-label" for="forms-message">Comentario</label>
                                         <textarea class="form-input" id="forms-message" name="message" data-constraints="@Required"></textarea>
                                     </div>
                                 </div>
                                 <div class="cell-sm-5 cell-md-3">
                                     <div class="form-button">
-                                        <button class="button button-primary button-block button-square" type="submit">send message</button>
+                                        <button class="button button-primary button-block button-square" type="submit">Enviar</button>
                                     </div>
                                 </div>
                             </div>
                         </form>
                     </div>
                     <div class="cell-md-5">
-                        <h4>Tukwila Office</h4>
+                        <h4>Contactanos</h4>
                         <div class="contact-info-block">
                             <div class="range range-30 range-xs-justify">
                                 <div class="cell-sm-4">
                                     <ul class="list list-contact">
-                                        <li>Phone: <a class="text-bold" href="tel:#">+1 (800) 123 1246 </a></li>
-                                        <li>Fax: <a class="text-bold" href="tel:#">+1 (800) 123 1286</a></li>
+                                        <li>Tel: <a class="text-bold" href="tel:#">(33) 2308 5711 </a></li>
+                                        <li>Whatsapp: <a class="text-bold" href="tel:#">33 1020 1737</a></li>
                                     </ul>
-                                    <p><a href="mailto:#">mail@demolink.org</a></p>
+                                    <p><a href="mailto:#">sagalorganic@gmail.com</a></p>
                                 </div>
                                 <div class="cell-sm-4">
-                                    <p>14973 Interurban Ave S <br>Suite 101 <br>Tukwila, WA 98168<br>Mon-Fri: 8:00 AM - 5:00 PM </p>
+                                    <p>Allende 95 Local A <br>Col. Centro <br>Sahuayo, Mich.<br>C.P. 59000 </p>
                                 </div>
-                                <div class="cell-xs-10">
+                                <!--<div class="cell-xs-10">
                                     <h5 class="text-bold">From Houston (Toolway)</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                         <div class="rd-google-map rd-google-map__model" data-zoom="12" data-y="40.643180" data-x="-73.9874068" data-styles="">
                             <ul class="map_locations">
                                 <li data-y="40.643180" data-x="-73.9874068">
-                                    <p>9870 St Vincent Place, Glasgow, DC 45 Fr 45.</p>
+                                    <p></p>
                                 </li>
                             </ul>
                         </div>
@@ -1583,23 +1537,18 @@ class Layout_View
             <div class="shell">
                 <div class="range range-15">
                     <div class="cell-sm-5">
-                        <p class="copyright">Galorganic &#169; <span class="copyright-year"></span>. <a href="privacy-policy.html">Privacy Policy</a>
+                        <p class="copyright">Galorganic &#169; <span class="copyright-year"></span>. <a href="#">Privacy Policy</a>
                         </p>
                     </div>
                     <div class="cell-sm-5 text-sm-right">
                         <ul class="list-inline">
                             <li>
-                                <a class="icon fa-facebook" href="index.html#"></a>
+                                <a class="icon fa-facebook" href="https://www.facebook.com/Galorganic/"></a>
                             </li>
                             <li>
-                                <a class="icon fa-twitter" href="index.html#"></a>
+                                <a class="icon fa-instagram" href="https://www.instagram.com/galorganic/"></a>
                             </li>
-                            <li>
-                                <a class="icon fa-google-plus" href="index.html#"></a>
-                            </li>
-                            <li>
-                                <a class="icon fa-pinterest-p" href="index.html#"></a>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
